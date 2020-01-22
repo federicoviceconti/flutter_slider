@@ -166,6 +166,7 @@ Widget _buildSpan(TextElement text, ResolutionScreen resolution) {
     );
 }
 
+//TODO very important: make better!
 Tuple<String, String, int> _buildSpannedText(TextElement text, {int startSpan, String tagStart, String tagEnd, String accentColor}) {
     var textSpan = text.content;
     var color = text.color;

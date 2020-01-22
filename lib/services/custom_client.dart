@@ -2,6 +2,13 @@ import 'package:flutter_slider/services/api.dart';
 import 'package:http/http.dart' as http;
 import 'package:http/http.dart';
 
+/// @class CustomClient
+/// 
+/// This class contains the creation of base url and their creations.
+/// This one is based on Environment, which you can change and configure
+/// with build type.
+/// 
+/// You can expand as you want.
 class CustomClient {
   String baseUrl;
 
@@ -15,6 +22,7 @@ class CustomClient {
 
   _createUrl(url) => baseUrl + url;
 
+  /// You can specify your urls here for every environment you want
   void _createBaseUrl(String baseUrl, Environment environment) {
     switch(environment) {
       case Environment.MOCK:
