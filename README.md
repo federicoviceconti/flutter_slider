@@ -1,16 +1,18 @@
 # flutter_slider
 
-A new Flutter project.
+Creates simple flutter slides with a .json file, which adapts to every resolution
 
-## Getting Started
+## Why?
 
-This project is a starting point for a Flutter application.
+This project is created for our flutter tech corner, which we explain flutter patterns for state management such as: BLoC or Provider.
+To make this speech special, we show the power of provider flutter, making this presentation with this.
 
-A few resources to get you started if this is your first Flutter project:
+# What is a tech corner?
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+Is a 30 minutes speech, where we talks about everything about technologies or soft skills.
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# How code is structured?
+
+In core folder you can find: BaseWidget and BaseNotifier. 
+Every widgets extends from BaseWidget, and every model extends the BaseNotifier.
+The Api class contains the client and requests.
