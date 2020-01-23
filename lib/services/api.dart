@@ -1,16 +1,15 @@
 import 'package:flutter_slider/core/config.dart';
+import 'package:flutter_slider/services/client.dart';
 import 'package:http/http.dart';
-import 'custom_client.dart';
 
 /// This class 
 class Api {
-  Environment type;
-  CustomClient client;
+  AbsClient client;
   
-  Api({this.type}): client = CustomClient(environment: type);
+  Api(): client = AbsClient.buildClient();
 
   Future<Response> getSlide() {
-    return client.get("slides");
+    return client.get(ClientPath.SLIDES_PATH);
   }
   
 }

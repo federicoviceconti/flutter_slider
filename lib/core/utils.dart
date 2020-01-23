@@ -167,6 +167,8 @@ Widget _buildSpan(TextElement text, ResolutionScreen resolution) {
 }
 
 //TODO very important: make better!
+/// This method created a spanned text for child in slide
+/// The slide json has some tags that we use to identify the special part, like: "<b></b>"
 Tuple<String, String, int> _buildSpannedText(TextElement text, {int startSpan, String tagStart, String tagEnd, String accentColor}) {
     var textSpan = text.content;
     var color = text.color;

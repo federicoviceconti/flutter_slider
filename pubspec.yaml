@@ -53,6 +53,7 @@ flutter:
     - assets/images/declarative.png
     - assets/images/state_set.png
     - assets/images/state_button_action.png
+    - assets/json/slides.json
     
   fonts:
     - family: FuturaPT
