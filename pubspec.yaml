@@ -25,6 +25,7 @@ dependencies:
   cupertino_icons: ^0.1.2
   provider: ^4.0.1
   http: ^0.12.0+4
+  flare_flutter: ^1.8.3
 
 dev_dependencies:
   flutter_test:
@@ -53,7 +54,16 @@ flutter:
     - assets/images/declarative.png
     - assets/images/state_set.png
     - assets/images/state_button_action.png
+    - assets/images/data-counter-provider.png
+    - assets/images/data-provider.png
+    - assets/images/of-counter-model.png
+    - assets/images/counter-descendant.png
+    - assets/images/shoes_bloc.png
+    - assets/images/shoes_stream_builder.png
+    - assets/images/shoes_tap_bloc.png
+    - assets/images/sink.png
     - assets/json/slides.json
+    - assets/animations/flutter.flr
     
   fonts:
     - family: FuturaPT

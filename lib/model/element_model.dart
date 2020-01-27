@@ -72,3 +72,9 @@ class AppElement extends ElementModel {
 
   AppElement({this.name}) : super(ElementConstant.APP);
 }
+
+class AnimationElement extends ElementModel {
+  final String name;
+
+  AnimationElement({this.name}) : super(ElementConstant.ANIMATION);
+}

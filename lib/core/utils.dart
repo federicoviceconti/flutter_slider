@@ -1,3 +1,4 @@
+import 'package:flare_flutter/flare_actor.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_slider/core/constants.dart';
 import 'package:flutter_slider/model/element_model.dart';
@@ -16,6 +17,9 @@ createElement(Map<String, dynamic> json) {
   var type = json != null ? json['type'] ?? "" : "";
 
   switch(type) {
+    case ElementConstant.ANIMATION:
+      AnimationElement animation = createAnimationElementFromJson(json);
+      return commonProperty(animation, json);
     case ElementConstant.TEXT:
       TextElement text = createTextElementFromJson(json);
       return commonProperty(text, json);
@@ -34,6 +38,16 @@ createElement(Map<String, dynamic> json) {
   }
 
   return commonProperty(ElementModel(""), json);
+}
+
+AnimationElement createAnimationElementFromJson(Map<String, dynamic> json) {
+  if(json != null) {
+    return AnimationElement(
+      name: json['name']
+    );
+  }
+
+  return null;
 }
 
 TextElement createTextElementFromJson(Map<String, dynamic> json) {
@@ -96,6 +110,10 @@ Widget createWidget(ElementModel model, ResolutionScreen resolution, Size query)
       var app = model as AppElement;
       child = createApp(app);
       break;
+    case ElementConstant.ANIMATION:
+      var anim = model as AnimationElement;
+      child = createAnimation(anim);
+      break;
     default:
       child = Container();
   }
@@ -121,6 +139,10 @@ _shouldBuildBottomText(ImageElement image, ResolutionScreen resolutionScreen, Si
   return Container();
 }
 
+Widget createAnimation(AnimationElement anim) {
+  return FlareActor("assets/animations/${anim.name}", fit:BoxFit.contain, animation:"idle");
+}
+
 Widget createApp(AppElement app) {
   return CounterExample();
 }
@@ -144,8 +166,6 @@ Widget _buildSpan(TextElement text, ResolutionScreen resolution) {
     );
     startSpan = tupla.third;
 
-    print("start $startSpan, $tupla");
-    
     textList.add(TextSpan(
       text: tupla.first, 
       style: TextStyle(
