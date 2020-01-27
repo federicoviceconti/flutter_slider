@@ -64,7 +64,17 @@ flutter:
     - assets/images/sink.png
     - assets/json/slides.json
     - assets/animations/flutter.flr
-    
+    - assets/images/provider/base_notifier.png
+    - assets/images/provider/consumer_items_shoes.png
+    - assets/images/provider/detail_navigatorservice.png
+    - assets/images/provider/home_change_notifier_provider.png
+    - assets/images/provider/home_init.png
+    - assets/images/provider/homenotifier_init.png
+    - assets/images/provider/model_onitempressed.png
+    - assets/images/provider/notifier_onitempressed.png
+    - assets/images/provider/select_brands.png
+    - assets/images/provider/setup_provider.png
+
   fonts:
     - family: FuturaPT
       fonts:

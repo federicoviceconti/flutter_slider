@@ -1,0 +1,631 @@
+{
+	"code": 200,
+	"message": "OK",
+	"result": {
+		"background_color": "#000000",
+		"resolution": {
+			"width": 1920,
+			"height": 1080
+		},
+		"title": "Flutter state managment",
+		"description": "insert description",
+		"authors": [{
+				"name": "Federico",
+				"surname": "Viceconti"
+			},
+			{
+				"name": "Fabio",
+				"surname": "Angellotti"
+			},
+			{
+				"name": "Marco",
+				"surname": "Massone"
+			}
+		],
+		"slides": [{
+			"src": "background_ntt.png",
+			"transition_in": "ease_in",
+			"transition_out": "ease_out",
+			"elements": [{
+				"type": "text",
+				"background_color": "#ffffff",
+				"color": "#000000",
+				"content": "Flutter\nState\nManagement",
+				"align": "center",
+				"size": 146,
+				"right": 250,
+				"top": 200,
+				"bottom": 35,
+				"left": 55,
+				"marginTop": 180
+			}]
+		}, {
+			"title": {
+				"type": "text",
+				"color": "#ffffff",
+				"content": "Why Flutter?",
+				"top": 80,
+				"left": 80,
+				"size": 60
+			},
+			"transition_in": "ease_in",
+			"transition_out": "ease_out",
+			"elements": [{
+				"type": "image",
+				"hasShape": true,
+				"color": "#000000",
+				"align": "center",
+				"top": 35,
+				"bottomText": {
+					"content": "Fast\ndevelopment",
+					"textAlign": "center",
+					"color": "#ffffff",
+					"size": 40,
+					"width": -2,
+					"height": -2
+				},
+				"left": 25,
+				"right": 25,
+				"bottom": 25,
+				"width": 350,
+				"height": 350,
+				"src": "fastdev.png"
+			}, {
+				"type": "image",
+				"hasShape": true,
+				"color": "#000000",
+				"align": "center",
+				"top": 35,
+				"bottomText": {
+					"content": "Expressive &\nFlexible UI",
+					"color": "#ffffff",
+					"textAlign": "center",
+					"size": 40,
+					"width": -2,
+					"height": -2
+				},
+				"left": 900,
+				"right": 25,
+				"bottom": 25,
+				"width": 350,
+				"height": 350,
+				"src": "ui.png"
+			}, {
+				"type": "image",
+				"hasShape": true,
+				"color": "#000000",
+				"align": "center",
+				"top": 35,
+				"bottomText": {
+					"content": "Native\nperformance",
+					"color": "#ffffff",
+					"textAlign": "center",
+					"size": 40,
+					"width": -2,
+					"height": -2
+				},
+				"left": 25,
+				"right": 900,
+				"bottom": 25,
+				"width": 350,
+				"height": 350,
+				"src": "performance.png"
+			}]
+		}, {
+			"title": {
+				"type": "text",
+				"color": "#ffffff",
+				"content": "Everything’s a widget",
+				"top": 80,
+				"left": 80,
+				"size": 60
+			},
+			"transition_in": "ease_in",
+			"transition_out": "ease_out",
+			"elements": [{
+				"type": "text",
+				"color": "#ffffff",
+				"content": "Widgets are <b>the basic building blocks</b> of a Flutter app’s user interface. Widgets describe what their view should look like given <b>their current configuration and state</b>. Each widget nests inside, and inherits properties from, its parent. They form a <b>hierarchy based on composition</b>.",
+				"left": 80,
+				"align": "center|left",
+				"size": 40,
+				"width": 700
+			}, {
+				"type": "image",
+				"align": "center|right",
+				"right": 250,
+				"bottom": 25,
+				"width": 600,
+				"height": 400,
+				"src": "flutter_code_example.png"
+			}]
+		}, {
+			"title": {
+				"type": "text",
+				"color": "#ffffff",
+				"content": "Start thinking declaratively",
+				"top": 80,
+				"left": 80,
+				"size": 60
+			},
+			"transition_in": "ease_in",
+			"transition_out": "ease_out",
+			"elements": [{
+				"type": "text",
+				"color": "#ffffff",
+				"content": "Flutter it’s not an other imperative programming languages: <b>is declarative</b>.",
+				"align": "bottom|center",
+				"size": 55,
+				"bottom": 80
+			}, {
+				"type": "image",
+				"align": "center",
+				"width": 1150,
+				"height": 550,
+				"src": "flutter_image_state.png"
+			}]
+		}, {
+			"transition_in": "ease_in",
+			"transition_out": "ease_out",
+			"elements": [{
+				"type": "text",
+				"color": "#B7B7B7",
+				"content": "//Imperative style",
+				"size": 55,
+				"align": "top|left",
+				"top": 400,
+				"left": 400
+			}, {
+				"type": "text",
+				"color": "#B7B7B7",
+				"content": "//Declarative style",
+				"align": "top|right",
+				"size": 55,
+				"top": 400,
+				"right": 400
+			}, {
+				"type": "image",
+				"align": "top|left",
+				"width": 500,
+				"height": 250,
+				"src": "imperative.png",
+				"top": 500,
+				"left": 350
+			}, {
+				"type": "image",
+				"align": "top|right",
+				"width": 500,
+				"height": 250,
+				"src": "declarative.png",
+				"top": 500,
+				"right": 350
+			}]
+		}, {
+			"transition_in": "ease_in",
+			"transition_out": "ease_out",
+			"elements": [{
+				"type": "text",
+				"color": "#ffffff",
+				"content": "To update their widgets, the framework compares the new and old state to <b>efficiently updates the user interface</b>. When a widget’s state changes, the widget rebuilds its description, which the <b>framework diffs against the previous description</b> in order to determine the minimal changes needed in the underlying render tree.",
+				"left": 80,
+				"align": "center|left",
+				"size": 40,
+				"width": 700
+			}, {
+				"type": "image",
+				"align": "center|right",
+				"right": 80,
+				"width": 800,
+				"height": 400,
+				"src": "state-management-explainer.gif"
+			}]
+		}, {
+			"title": {
+				"type": "text",
+				"color": "#ffffff",
+				"content": "Create simple app with state",
+				"top": 80,
+				"left": 80,
+				"size": 60
+			},
+			"transition_in": "ease_in",
+			"transition_out": "ease_out",
+			"elements": [{
+				"type": "text",
+				"color": "#adadad",
+				"content": "Demo session",
+				"top": 175,
+				"left": 80,
+				"size": 40
+			}, {
+				"type": "app",
+				"name": "counter.dart",
+				"top": 300,
+				"left": 80,
+				"width": 700,
+				"height": 650
+			}, {
+				"type": "image",
+				"align": "center|right",
+				"right": 80,
+				"top": 250,
+				"width": 400,
+				"height": 400,
+				"src": "state_set.png"
+			}, {
+				"type": "image",
+				"align": "center|right",
+				"right": 600,
+				"top": 150,
+				"width": 450,
+				"height": 450,
+				"src": "state_button_action.png"
+			}]
+		}, {
+			"transition_in": "ease_in",
+			"transition_out": "ease_out",
+			"elements": [{
+				"type": "text",
+				"color": "#ffffff",
+				"content": "As you explore Flutter, there comes a time when you need to <b>share application state between screens</b>, across your app. There are many approaches you can take, and many questions to think about.",
+				"align": "center|left",
+				"size": 90,
+				"left": 80,
+				"right": 100,
+				"width": 1100
+			}, {
+				"type": "animation",
+				"name": "flutter.flr",
+				"align": "bottom|right",
+				"height": 950,
+				"width": 700
+			}]
+		}, {
+			"background_color": "#ffffff",
+			"title": {
+				"type": "text",
+				"color": "#000000",
+				"content": "Flutter\nBloc",
+				"align": "bottom|left",
+				"bottom": 80,
+				"left": 130,
+				"size": 100
+			},
+			"transition_in": "ease_in",
+			"transition_out": "ease_out",
+			"elements": []
+		}, {
+			"transition_in": "ease_in",
+			"transition_out": "ease_out",
+			"elements": [{
+				"background_color": "#ffffff",
+				"width": 550
+			}, {
+				"type": "text",
+				"color": "#000000",
+				"content": "Flutter\nBloc",
+				"align": "bottom|left",
+				"bottom": 80,
+				"left": 130,
+				"size": 100
+			}, {
+				"type": "text",
+				"color": "#ffffff",
+				"content": "<b>B</b>usiness <b>Lo</b>gic <b>C</b>omponents",
+				"align": "center",
+				"size": 110,
+				"bottom": 100,
+				"left": 550
+			}, {
+				"type": "text",
+				"color": "#ffffff",
+				"content": "Introduced during the DartConference 2018 by <b>Paolo Soares</b>,\na Google Employee.",
+				"align": "center",
+				"left": 260,
+				"size": 36,
+				"top": 200
+			}]
+		}, {
+			"title": {
+				"type": "text",
+				"color": "#ffffff",
+				"content": "BLoC Design guidelines",
+				"top": 80,
+				"left": 80,
+				"size": 60
+			},
+			"transition_in": "ease_in",
+			"transition_out": "ease_out",
+			"elements": [{
+				"type": "text",
+				"color": "#ffffff",
+				"content": "● Inputs and outputs are simple <b>Streams/Sinks</b> only\n\n● Dependencies must be <b>injectable and platform agnostic</b>\n\n● <b>No platform</b> branching allowed\n\n● Implementation can be whatever you want if you follow the previous rules.",
+				"size": 55,
+				"align": "center"
+			}]
+		}, {
+			"title": {
+				"type": "text",
+				"color": "#ffffff",
+				"content": "Dart Stream",
+				"top": 80,
+				"left": 80,
+				"size": 60
+			},
+			"transition_in": "ease_in",
+			"transition_out": "ease_out",
+			"elements": [{
+				"type": "text",
+				"size": 50,
+				"bottom": 550,
+				"content": "Sink",
+				"color": "#ffffff",
+				"left": 275,
+				"align": "center|left"
+			}, {
+				"type": "text",
+				"size": 50,
+				"top": 550,
+				"left": 250,
+				"content": "Stream",
+				"color": "#ffffff",
+				"align": "center|left"
+			}, {
+				"type": "image",
+				"src": "sink.png",
+				"width": 400,
+				"height": 400,
+				"left": 120,
+				"align": "center|left"
+			}, {
+				"type": "text",
+				"size": 50,
+				"right": 120,
+				"left": 680,
+				"color": "#ffffff",
+				"content": "The purpose of sink is to <b>send</b> information through the pipe.\n\nThe purpose of stream is to <b>observe</b> the information coming out of the pipe.",
+				"align": "center|right"
+			}]
+		}, {
+			"title": {
+				"type": "text",
+				"color": "#ffffff",
+				"content": "BLoC - ShoesBloc",
+				"top": 80,
+				"left": 80,
+				"size": 60
+			},
+			"transition_in": "ease_in",
+			"transition_out": "ease_out",
+			"elements": [{
+				"type": "image",
+				"src": "shoes_bloc.png",
+				"align": "center|left",
+				"left": 80,
+				"width": 900,
+				"height": 900
+			}]
+		}, {
+			"title": {
+				"type": "text",
+				"color": "#ffffff",
+				"content": "BLoC - Widget",
+				"top": 80,
+				"left": 80,
+				"size": 60
+			},
+			"transition_in": "ease_in",
+			"transition_out": "ease_out",
+			"elements": [{
+				"type": "image",
+				"src": "shoes_stream_builder.png",
+				"align": "center|left",
+				"left": 80,
+				"width": 900,
+				"height": 900
+			}]
+		}, {
+			"title": {
+				"type": "text",
+				"color": "#ffffff",
+				"content": "BLoC - Widget",
+				"top": 80,
+				"left": 80,
+				"size": 60
+			},
+			"transition_in": "ease_in",
+			"transition_out": "ease_out",
+			"elements": [{
+				"type": "image",
+				"src": "shoes_tap_bloc.png",
+				"align": "center|left",
+				"left": 80,
+				"width": 750,
+				"height": 700
+			}]
+		}, {
+			"title": {
+				"type": "text",
+				"color": "#ffffff",
+				"content": "BLoC Libraries",
+				"top": 80,
+				"left": 80,
+				"size": 60
+			},
+			"transition_in": "ease_in",
+			"transition_out": "ease_out",
+			"elements": [{
+				"type": "text",
+				"color": "#ffffff",
+				"content": "<b>RxDart</b>\n\n<b>import 'package:bloc/bloc.dart';</b>\n\n<b>import 'package:flutter_bloc/flutter_bloc.dart';</b>",
+				"size": 55,
+				"align": "center"
+			}]
+		}, {
+			"background_color": "#ffffff",
+			"title": {
+				"type": "text",
+				"color": "#000000",
+				"content": "Flutter\nProvider",
+				"align": "bottom|left",
+				"bottom": 80,
+				"left": 130,
+				"size": 100
+			},
+			"transition_in": "ease_in",
+			"transition_out": "ease_out",
+			"elements": []
+		}, {
+			"transition_in": "ease_in",
+			"transition_out": "ease_out",
+			"elements": [{
+				"background_color": "#ffffff",
+				"width": 550
+			}, {
+				"type": "text",
+				"color": "#000000",
+				"content": "Flutter\nProvider",
+				"align": "bottom|left",
+				"bottom": 80,
+				"left": 130,
+				"size": 100
+			}, {
+				"type": "text",
+				"color": "#ffffff",
+				"content": "<b>Introducing provider on talk</b>: Pragmatic State Management in Flutter (Google I/O'19)",
+				"align": "center",
+				"left": 700,
+				"size": 55,
+				"top": 0,
+				"bottom": 250
+			}, {
+				"type": "text",
+				"color": "#ffffff",
+				"content": "Speaker(s): Filip Hracek and Matt Sullivan",
+				"align": "center",
+				"size": 30,
+				"right": 20,
+				"top": 250,
+				"bottom": 250
+			}, {
+				"type": "text",
+				"color": "#ffffff",
+				"content": "Hot topics:\n● Make <b>clear and simple</b> architecture\n● Performance\n● Antipattern",
+				"align": "center",
+				"size": 35,
+				"top": 550,
+				"bottom": 200
+			}]
+		}, {
+			"title": {
+				"type": "text",
+				"color": "#ffffff",
+				"content": "Provider principle",
+				"top": 80,
+				"left": 80,
+				"size": 60
+			},
+			"transition_in": "ease_in",
+			"transition_out": "ease_out",
+			"elements": [{
+				"type": "text",
+				"color": "#ffffff",
+				"content": "● A <b>mixture</b> between dependency injection (DI) and state management\n\n● <b>Built with widgets</b> for widgets. They will make your app robust and scalable\n\n● Easy to understand. <b>No need</b> of Rx, Stream, Hooks etc.\n\n● If you work with stream based library, provider works well (like Firebase)",
+				"size": 55,
+				"left": 80,
+				"right": 80,
+				"align": "center"
+			}]
+		}, {
+			"title": {
+				"type": "text",
+				"color": "#ffffff",
+				"content": "Provider Design guidelines",
+				"top": 80,
+				"left": 80,
+				"size": 60
+			},
+			"transition_in": "ease_in",
+			"transition_out": "ease_out",
+			"elements": [{
+				"type": "text",
+				"color": "#ffffff",
+				"content": "● Principal components are: Provider, Notifier and Consumer.\n\n● Better design fine grained notifier\n\n● No global state (antipattern): this could cause possible crash or unpredictable state",
+				"size": 55,
+				"align": "center"
+			}]
+		}, {
+			"title": {
+				"type": "text",
+				"color": "#ffffff",
+				"content": "Migrating from Scoped Model to Provider",
+				"top": 80,
+				"left": 80,
+				"size": 60
+			},
+			"transition_in": "ease_in",
+			"transition_out": "ease_out",
+			"elements": [{
+				"type": "image",
+				"align": "center|left",
+				"left": 250,
+				"top": 550,
+				"width": 650,
+				"height": 450,
+				"src": "counter-descendant.png"
+			}, {
+				"type": "image",
+				"align": "center|left",
+				"left": 250,
+				"width": 600,
+				"height": 400,
+				"bottom": 300,
+				"src": "of-counter-model.png"
+			}, {
+				"type": "image",
+				"align": "center|right",
+				"right": 150,
+				"top": 550,
+				"width": 750,
+				"height": 450,
+				"src": "data-counter-provider.png"
+			}, {
+				"type": "image",
+				"align": "center|right",
+				"right": 250,
+				"bottom": 325,
+				"width": 600,
+				"height": 400,
+				"src": "data-provider.png"
+			}]
+		}, {
+			"title": {
+				"type": "text",
+				"color": "#ffffff",
+				"content": "Provider Libraries",
+				"top": 80,
+				"left": 80,
+				"size": 60
+			},
+			"transition_in": "ease_in",
+			"transition_out": "ease_out",
+			"elements": [{
+				"type": "text",
+				"color": "#ffffff",
+				"content": "On pubspec.yaml: <b>provider: ^4.0.2</b>\n\nOn dart code: <b>import 'package:provider/provider.dart';</b>",
+				"size": 55,
+				"align": "center"
+			}]
+		}, {
+			"transition_in": "ease_in",
+			"transition_out": "ease_out",
+			"elements": [{
+				"type": "text",
+				"color": "#ffffff",
+				"content": "Q&A",
+				"align": "center",
+				"size": 140
+			}]
+		}]
+	}
+}
