@@ -43,6 +43,7 @@ flutter:
   # the material Icons class.
   uses-material-design: true
   assets:
+    - assets/nike_shoe.png
     - assets/images/background_ntt.png
     - assets/images/fastdev.png
     - assets/images/ui.png

@@ -2,7 +2,6 @@ import 'package:flutter_slider/core/config.dart';
 import 'package:flutter_slider/services/client.dart';
 import 'package:http/http.dart';
 
-/// This class 
 class Api {
   AbsClient client;
   

@@ -1,5 +1,5 @@
 import 'dart:io';
-
+import 'package:flutter/services.dart';
 import 'package:flutter_slider/core/config.dart';
 import 'package:http/http.dart';
 import 'client.dart';
@@ -21,7 +21,7 @@ class MockClient extends AbsClient {
     var firstPartPath = "assets/json";
 
     if(path == ClientPath.SLIDES_PATH) {
-      //I WILL REPLACE AFTER TECH CORNER :) return await rootBundle.loadString("$firstPartPath/slides.json");
+      return await rootBundle.loadString("$firstPartPath/slides.json");
     }
 
     throw new Exception("Network mock not found! Path: $firstPartPath/$path");

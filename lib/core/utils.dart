@@ -1,6 +1,7 @@
 import 'package:flare_flutter/flare_actor.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_slider/core/constants.dart';
+import 'package:flutter_slider/flutter_provider/lib/main.dart';
 import 'package:flutter_slider/model/element_model.dart';
 import 'package:flutter_slider/model/resolution.dart';
 import 'package:flutter_slider/views/counter_example/counter.dart';
@@ -143,8 +144,15 @@ Widget createAnimation(AnimationElement anim) {
   return FlareActor("assets/animations/${anim.name}", fit:BoxFit.contain, animation:"idle");
 }
 
+var provider = FlutterProvider();
+var counter = CounterExample();
+
 Widget createApp(AppElement app) {
-  return CounterExample();
+  if(app.name == "provider") {
+    return provider;
+  }
+
+  return counter;
 }
 
 Widget _buildSpan(TextElement text, ResolutionScreen resolution) {

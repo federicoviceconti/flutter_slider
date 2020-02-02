@@ -239,7 +239,7 @@
 				"size": 40
 			}, {
 				"type": "app",
-				"name": "counter.dart",
+				"name": "counter",
 				"top": 300,
 				"left": 80,
 				"width": 700,
@@ -550,9 +550,151 @@
 			"elements": [{
 				"type": "text",
 				"color": "#ffffff",
-				"content": "● Principal components are: Provider, Notifier and Consumer.\n\n● Better design fine grained notifier\n\n● No global state (antipattern): this could cause possible crash or unpredictable state",
+				"content": "● Principal components are: <b>Provider, Notifier and Consumer</b>.\n\n● Better design fine grained notifier\n\n● No global state (antipattern): this could cause possible crash or unpredictable state",
 				"size": 55,
 				"align": "center"
+			}]
+		}, {
+			"title": {
+				"type": "text",
+				"color": "#ffffff",
+				"content": "Shoe - Provider",
+				"top": 80,
+				"left": 80,
+				"size": 60
+			},
+			"transition_in": "ease_in",
+			"transition_out": "ease_out",
+			"elements": [{
+				"type": "image",
+				"src": "provider/home_change_notifier_provider.png",
+				"align": "center|left",
+				"left": 80,
+				"bottom": 225,
+				"width": 900,
+				"height": 900
+			}, {
+				"type": "image",
+				"src": "provider/home_init.png",
+				"align": "center|left",
+				"top": 600,
+				"left": 80,
+				"width": 900,
+				"height": 900
+			}, {
+				"type": "app",
+				"name": "provider",
+				"align": "center|right",
+				"right": 100,
+				"width": 500,
+				"height": 800,
+				"top": 100
+			}]
+		}, {
+			"title": {
+				"type": "text",
+				"color": "#ffffff",
+				"content": "Shoe - Notifier",
+				"top": 80,
+				"left": 80,
+				"size": 60
+			},
+			"transition_in": "ease_in",
+			"transition_out": "ease_out",
+			"elements": [{
+				"type": "image",
+				"src": "provider/homenotifier_init.png",
+				"align": "center|left",
+				"bottom": 250,
+				"left": 150,
+				"width": 700,
+				"height": 700
+			}, {
+				"type": "image",
+				"src": "provider/base_notifier.png",
+				"align": "center|left",
+				"top": 600,
+				"left": 150,
+				"width": 700,
+				"height": 700
+			}, {
+				"type": "app",
+				"name": "provider",
+				"align": "center|right",
+				"top": 100,
+				"right": 150,
+				"width": 500,
+				"height": 800
+			}]
+		}, {
+			"title": {
+				"type": "text",
+				"color": "#ffffff",
+				"content": "Shoe - Consumer",
+				"top": 80,
+				"left": 80,
+				"size": 60
+			},
+			"transition_in": "ease_in",
+			"transition_out": "ease_out",
+			"elements": [{
+				"type": "image",
+				"src": "provider/consumer_items_shoes.png",
+				"align": "center|left",
+				"left": 80,
+				"width": 750,
+				"height": 700
+			}, {
+				"type": "app",
+				"name": "provider",
+				"align": "center|right",
+				"right": 100,
+				"width": 500,
+				"height": 800
+			}]
+		}, {
+			"title": {
+				"type": "text",
+				"color": "#ffffff",
+				"content": "Shoe detail",
+				"top": 80,
+				"left": 80,
+				"size": 60
+			},
+			"transition_in": "ease_in",
+			"transition_out": "ease_out",
+			"elements": [{
+				"type": "image",
+				"src": "provider/model_onitempressed.png",
+				"align": "center|left",
+				"bottom": 350,
+				"left": 80,
+				"width": 750,
+				"height": 700
+			}, {
+				"type": "image",
+				"src": "provider/notifier_onitempressed.png",
+				"align": "center|left",
+				"top": 325,
+				"left": 80,
+				"width": 750,
+				"height": 700
+			}, {
+				"type": "image",
+				"src": "provider/detail_navigatorservice.png",
+				"align": "center|left",
+				"top": 800,
+				"left": 80,
+				"width": 750,
+				"height": 700
+			}, {
+				"type": "app",
+				"name": "provider",
+				"align": "center|right",
+				"top": 100,
+				"right": 150,
+				"width": 500,
+				"height": 800
 			}]
 		}, {
 			"title": {
