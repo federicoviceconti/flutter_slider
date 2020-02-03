@@ -404,6 +404,14 @@
 				"left": 80,
 				"width": 900,
 				"height": 900
+			}, {
+				"type": "app",
+				"name": "provider",
+				"align": "center|right",
+				"right": 100,
+				"width": 500,
+				"height": 800,
+				"top": 100
 			}]
 		}, {
 			"title": {
@@ -423,6 +431,14 @@
 				"left": 80,
 				"width": 900,
 				"height": 900
+			}, {
+				"type": "app",
+				"name": "provider",
+				"align": "center|right",
+				"right": 100,
+				"width": 500,
+				"height": 800,
+				"top": 100
 			}]
 		}, {
 			"title": {
@@ -442,6 +458,14 @@
 				"left": 80,
 				"width": 750,
 				"height": 700
+			}, {
+				"type": "app",
+				"name": "provider",
+				"align": "center|right",
+				"right": 100,
+				"width": 500,
+				"height": 800,
+				"top": 100
 			}]
 		}, {
 			"title": {
@@ -649,6 +673,7 @@
 				"name": "provider",
 				"align": "center|right",
 				"right": 100,
+				"top": 100,
 				"width": 500,
 				"height": 800
 			}]
