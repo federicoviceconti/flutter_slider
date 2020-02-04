@@ -9,7 +9,7 @@ import 'package:flutter_slider/views/slider/slider_notifier.dart';
 import 'package:provider/provider.dart';
 
 class SliderWidget extends StatelessWidget {
-  final _pageController = PageController(initialPage: 0);
+  final _pageController = PageController(initialPage: 0, keepPage: false);
   final bool showRefreshButton;
 
   SliderWidget({this.showRefreshButton = true});
@@ -19,7 +19,6 @@ class SliderWidget extends StatelessWidget {
     return BaseWidget<SliderNotifier>(
       model: SliderNotifier(
         service: Provider.of<SliderService>(context, listen: false),
-        //resolution: Resolution(width: query.width.toInt(), height: query.height.toInt())
       ),
       onModelInit: (model) => model.onModelInit(),
       consumerBuilder: (_, SliderNotifier model, __) => RawKeyboardListener(
@@ -70,13 +69,15 @@ class SliderWidget extends StatelessWidget {
           var length = slider.slides.length - 1 ?? 0;
           
           if (keyCode == KeyCode.right && _pageController.page < length) {
-            _pageController?.nextPage(duration: Duration(milliseconds: 500), curve: getCurve(transitionIn));
+            print("next page ${_pageController.page}");
+            _pageController?.nextPage(duration: Duration(milliseconds: 500), curve: Curves.ease);
           } else if (keyCode == KeyCode.left && _pageController.page > 0) {
-            _pageController?.previousPage(duration: Duration(milliseconds: 500), curve: getCurve(transitionIn));
+            print("previous page ${_pageController.page}");
+            _pageController?.previousPage(duration: Duration(milliseconds: 500), curve: Curves.ease);
           } else if (keyCode == KeyCode.r) {
             notifier.onModelInit();
           } else if(keyCode == KeyCode.f) {
-            fullscreen();
+            //TODO fullscreen();
           }
         }
         break;
@@ -98,8 +99,5 @@ class SliderWidget extends StatelessWidget {
         ),
       ),
     ) : Container() ;
-  }
-
-  Future<void> fullscreen() async {
   }
 }

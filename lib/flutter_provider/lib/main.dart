@@ -11,16 +11,14 @@ class FlutterProvider extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    var navigatorService = NavigatorService();
-
     return MaterialApp(
       title: 'TechCorner',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         fontFamily: 'FuturaPT',
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.red,
       ),
-      navigatorKey: navigatorService.navigatorKey,
+      navigatorKey: Provider.of<NavigatorService>(context).navigatorKey,
       onGenerateRoute: (settings) {
         final arguments = settings.arguments;
         switch(settings.name) {
@@ -33,20 +31,8 @@ class FlutterProvider extends StatelessWidget {
           default: throw new Exception("route not found!");
         }
       },
-      home: MultiProvider(
-        providers: _setupDependencies(navigatorService),
-        child: MyHomePage(title: 'Discover'),
-      ),
+      home: MyHomePage(title: 'Discover'),
     );
-  }
-
-  _setupDependencies(NavigatorService navigatorService) {
-    var navigator = Provider.value(value: navigatorService);
-    var api = Provider.value(value: ApiProvider());
-    return [
-      navigator,
-      api
-    ];
   }
 }
 
@@ -93,7 +79,7 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       ],
       currentIndex: 0,
-      selectedItemColor: Colors.amber[800],
+      selectedItemColor: Colors.red[800],
       unselectedItemColor: Colors.grey[400],
       onTap: _onItemTapped,
     );

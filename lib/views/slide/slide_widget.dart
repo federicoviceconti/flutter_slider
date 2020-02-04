@@ -40,14 +40,16 @@ class SlideWidget extends StatelessWidget {
           width: double.infinity, 
           child: Stack(children: elements)
         ),
+        _buildLogo(model.hasLogo)
       ],
     ) : Stack(
       children: [
         _buildBackground(context, model),
         Container(
           width: double.infinity, 
-          child: Stack(children: elements)
+          child: Stack(children: elements),
         ),
+        _buildLogo(model.hasLogo)
       ],
     );
   }
@@ -74,4 +76,23 @@ class SlideWidget extends StatelessWidget {
 
     return Container();
   }
+}
+
+_buildLogo(bool hasLogo) {
+  if(hasLogo) {
+    return Container(
+      padding: EdgeInsets.only(left: 30.0, bottom: 20),
+      alignment: Alignment.bottomLeft,
+      child: Text(
+        "Mobile&\nCreative Technology",
+        style: TextStyle(
+          color: Color(0xFFD5FD58),
+          fontSize: 16,
+          fontWeight: FontWeight.bold
+        ),
+      ),
+    );
+  }
+
+  return Container();
 }

@@ -6,6 +6,8 @@ import 'package:flutter_slider/model/element_model.dart';
 import 'package:flutter_slider/model/resolution.dart';
 import 'package:flutter_slider/views/counter_example/counter.dart';
 
+import 'widget/phone_frame.dart';
+
 Color hexToColor(String hexString, {String alphaChannel = 'FF'}) {
   if(hexString != null && hexString.isNotEmpty) {
     return Color(int.parse(hexString.replaceFirst('#', '0x$alphaChannel')));
@@ -144,19 +146,20 @@ Widget createAnimation(AnimationElement anim) {
   return FlareActor("assets/animations/${anim.name}", fit:BoxFit.contain, animation:"idle");
 }
 
-var provider = FlutterProvider();
-var counter = CounterExample();
-
 Widget createApp(AppElement app) {
   if(app.name == "provider") {
+    var provider = ClipRect(
+      child: FlutterProvider()
+    );
     return provider;
   }
 
+  var counter = CounterExample();
   return counter;
 }
 
 Widget _buildSpan(TextElement text, ResolutionScreen resolution) {
-  var weight = text.weight != null ? FontWeight.values.firstWhere((it) => it.toString() == text.weight) : FontWeight.normal;
+  var weight = text.weight != null ? FontWeight.values.firstWhere((it) => it.toString() == text.weight, orElse: () => FontWeight.normal) : FontWeight.normal;
   var textAlign = text.textAlign != null ? TextAlign.values.firstWhere((it) {
     return it.toString() == "TextAlign.${text.textAlign}";
   }) : TextAlign.left;
@@ -170,7 +173,7 @@ Widget _buildSpan(TextElement text, ResolutionScreen resolution) {
       startSpan: startSpan, 
       tagStart: "<b>", 
       tagEnd: "</b>",
-      accentColor: "#12a7fd"
+      accentColor: "#D5FD58"
     );
     startSpan = tupla.third;
 

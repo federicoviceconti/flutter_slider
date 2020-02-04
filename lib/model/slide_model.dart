@@ -7,13 +7,15 @@ class SlideModel {
   final String backgroundColor;
   final String transitionIn;
   final String src;
+  final bool hasLogo;
 
   SlideModel({
     this.elements,
     this.title, 
     this.backgroundColor, 
     this.transitionIn,
-    this.src
+    this.src, 
+    this.hasLogo
   });
 
   static List<SlideModel> fromSliderJson(result) {
@@ -26,6 +28,7 @@ class SlideModel {
         backgroundColor: it['background_color'],
         elements: ElementModel.fromSlideJson(it),
         transitionIn: result['transition_in'],
+        hasLogo: it['has_logo'] != null ? it['has_logo'] : true,
         src: it['src']
       );
 

@@ -24,7 +24,7 @@ class ItemCardWidget extends StatelessWidget {
                 height: 288,
                 width: 200,
                 decoration: BoxDecoration(
-                  color: Colors.orange,
+                  color: Color(0xFFEDAA9A),
                   borderRadius: BorderRadius.all(Radius.circular(16.0)),
                   boxShadow: [
                     BoxShadow(

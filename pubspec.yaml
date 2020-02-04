@@ -44,6 +44,7 @@ flutter:
   uses-material-design: true
   assets:
     - assets/nike_shoe.png
+    - assets/images/phone_frame.png
     - assets/images/background_ntt.png
     - assets/images/fastdev.png
     - assets/images/ui.png
@@ -98,7 +99,26 @@ flutter:
         - asset: assets/fonts/Futura/FuturaPT-MediumObl.ttf
           weight: 500
           style: italic
-
+    - family: Muli
+      fonts:
+        - asset: assets/fonts/Muli/Muli-Black.ttf
+          weight: 800
+        - asset: assets/fonts/Muli/Muli-ExtraBold.ttf
+          weight: 700
+        - asset: assets/fonts/Muli/Muli-Bold.ttf
+          weight: 600
+        - asset: assets/fonts/Muli/Muli-SemiBold.ttf
+          weight: 500
+        - asset: assets/fonts/Muli/Muli-Light.ttf
+          weight: 100
+        - asset: assets/fonts/Muli/Muli-Regular.ttf
+        - asset: assets/fonts/Muli/Muli-Medium.ttf
+          weight: 500
+          style: normal
+        - asset: assets/fonts/Muli/Muli-Italic.ttf
+          weight: 500
+          style: italic
+    
   # To add assets to your application, add an assets section, like this:
   # assets:
   #  - images/a_dot_burr.jpeg

@@ -23,6 +23,7 @@
 			}
 		],
 		"slides": [{
+		    "has_logo": false,
 			"src": "background_ntt.png",
 			"transition_in": "ease_in",
 			"transition_out": "ease_out",
@@ -42,7 +43,7 @@
 		}, {
 			"title": {
 				"type": "text",
-				"color": "#ffffff",
+				"color": "#D5FD58",
 				"content": "Why Flutter?",
 				"top": 80,
 				"left": 80,
@@ -114,7 +115,7 @@
 		}, {
 			"title": {
 				"type": "text",
-				"color": "#ffffff",
+				"color": "#D5FD58",
 				"content": "Everything’s a widget",
 				"top": 80,
 				"left": 80,
@@ -128,13 +129,13 @@
 				"content": "Widgets are <b>the basic building blocks</b> of a Flutter app’s user interface. Widgets describe what their view should look like given <b>their current configuration and state</b>. Each widget nests inside, and inherits properties from, its parent. They form a <b>hierarchy based on composition</b>.",
 				"left": 80,
 				"align": "center|left",
-				"size": 40,
-				"width": 700
+				"size": 45,
+				"width": 800
 			}, {
 				"type": "image",
 				"align": "center|right",
 				"right": 250,
-				"bottom": 25,
+				"top": 25,
 				"width": 600,
 				"height": 400,
 				"src": "flutter_code_example.png"
@@ -142,12 +143,13 @@
 		}, {
 			"title": {
 				"type": "text",
-				"color": "#ffffff",
+				"color": "#D5FD58",
 				"content": "Start thinking declaratively",
 				"top": 80,
 				"left": 80,
 				"size": 60
 			},
+			"has_logo": false,
 			"transition_in": "ease_in",
 			"transition_out": "ease_out",
 			"elements": [{
@@ -209,8 +211,8 @@
 				"content": "To update their widgets, the framework compares the new and old state to <b>efficiently updates the user interface</b>. When a widget’s state changes, the widget rebuilds its description, which the <b>framework diffs against the previous description</b> in order to determine the minimal changes needed in the underlying render tree.",
 				"left": 80,
 				"align": "center|left",
-				"size": 40,
-				"width": 700
+				"size": 45,
+				"width": 800
 			}, {
 				"type": "image",
 				"align": "center|right",
@@ -222,7 +224,7 @@
 		}, {
 			"title": {
 				"type": "text",
-				"color": "#ffffff",
+				"color": "#D5FD58",
 				"content": "Create simple app with state",
 				"top": 80,
 				"left": 80,
@@ -247,8 +249,8 @@
 			}, {
 				"type": "image",
 				"align": "center|right",
-				"right": 80,
-				"top": 250,
+				"right": 150,
+				"top": 150,
 				"width": 400,
 				"height": 400,
 				"src": "state_set.png"
@@ -269,7 +271,7 @@
 				"color": "#ffffff",
 				"content": "As you explore Flutter, there comes a time when you need to <b>share application state between screens</b>, across your app. There are many approaches you can take, and many questions to think about.",
 				"align": "center|left",
-				"size": 90,
+				"size": 55,
 				"left": 80,
 				"right": 100,
 				"width": 1100
@@ -281,6 +283,7 @@
 				"width": 700
 			}]
 		}, {
+		    "has_logo": false,
 			"background_color": "#ffffff",
 			"title": {
 				"type": "text",
@@ -295,6 +298,7 @@
 			"transition_out": "ease_out",
 			"elements": []
 		}, {
+		    "has_logo": false,
 			"transition_in": "ease_in",
 			"transition_out": "ease_out",
 			"elements": [{
@@ -328,7 +332,7 @@
 		}, {
 			"title": {
 				"type": "text",
-				"color": "#ffffff",
+				"color": "#D5FD58",
 				"content": "BLoC Design guidelines",
 				"top": 80,
 				"left": 80,
@@ -346,7 +350,7 @@
 		}, {
 			"title": {
 				"type": "text",
-				"color": "#ffffff",
+				"color": "#D5FD58",
 				"content": "Dart Stream",
 				"top": 80,
 				"left": 80,
@@ -360,36 +364,36 @@
 				"bottom": 550,
 				"content": "Sink",
 				"color": "#ffffff",
-				"left": 275,
-				"align": "center|left"
+				"right": 275,
+				"align": "center|right"
 			}, {
 				"type": "text",
 				"size": 50,
 				"top": 550,
-				"left": 250,
+				"right": 250,
 				"content": "Stream",
 				"color": "#ffffff",
-				"align": "center|left"
+				"align": "center|right"
 			}, {
 				"type": "image",
 				"src": "sink.png",
 				"width": 400,
 				"height": 400,
-				"left": 120,
-				"align": "center|left"
+				"right": 120,
+				"align": "center|right"
 			}, {
 				"type": "text",
 				"size": 50,
-				"right": 120,
-				"left": 680,
+				"right": 680,
+				"left": 80,
 				"color": "#ffffff",
 				"content": "The purpose of sink is to <b>send</b> information through the pipe.\n\nThe purpose of stream is to <b>observe</b> the information coming out of the pipe.",
-				"align": "center|right"
+				"align": "center|left"
 			}]
 		}, {
 			"title": {
 				"type": "text",
-				"color": "#ffffff",
+				"color": "#D5FD58",
 				"content": "BLoC - ShoesBloc",
 				"top": 80,
 				"left": 80,
@@ -416,7 +420,7 @@
 		}, {
 			"title": {
 				"type": "text",
-				"color": "#ffffff",
+				"color": "#D5FD58",
 				"content": "BLoC - Widget",
 				"top": 80,
 				"left": 80,
@@ -443,7 +447,7 @@
 		}, {
 			"title": {
 				"type": "text",
-				"color": "#ffffff",
+				"color": "#D5FD58",
 				"content": "BLoC - Widget",
 				"top": 80,
 				"left": 80,
@@ -470,7 +474,7 @@
 		}, {
 			"title": {
 				"type": "text",
-				"color": "#ffffff",
+				"color": "#D5FD58",
 				"content": "BLoC Libraries",
 				"top": 80,
 				"left": 80,
@@ -486,6 +490,7 @@
 				"align": "center"
 			}]
 		}, {
+		    "has_logo": false,
 			"background_color": "#ffffff",
 			"title": {
 				"type": "text",
@@ -500,6 +505,7 @@
 			"transition_out": "ease_out",
 			"elements": []
 		}, {
+		    "has_logo": false,
 			"transition_in": "ease_in",
 			"transition_out": "ease_out",
 			"elements": [{
@@ -543,7 +549,7 @@
 		}, {
 			"title": {
 				"type": "text",
-				"color": "#ffffff",
+				"color": "#D5FD58",
 				"content": "Provider principle",
 				"top": 80,
 				"left": 80,
@@ -563,7 +569,7 @@
 		}, {
 			"title": {
 				"type": "text",
-				"color": "#ffffff",
+				"color": "#D5FD58",
 				"content": "Provider Design guidelines",
 				"top": 80,
 				"left": 80,
@@ -581,7 +587,7 @@
 		}, {
 			"title": {
 				"type": "text",
-				"color": "#ffffff",
+				"color": "#D5FD58",
 				"content": "Shoe - Provider",
 				"top": 80,
 				"left": 80,
@@ -595,29 +601,29 @@
 				"align": "center|left",
 				"left": 80,
 				"bottom": 225,
-				"width": 900,
-				"height": 900
+				"width": 800,
+				"height": 800
 			}, {
 				"type": "image",
 				"src": "provider/home_init.png",
 				"align": "center|left",
 				"top": 600,
 				"left": 80,
-				"width": 900,
-				"height": 900
+				"width": 800,
+				"height": 800
 			}, {
 				"type": "app",
 				"name": "provider",
 				"align": "center|right",
-				"right": 100,
+				"top": 150,
+				"right": 150,
 				"width": 500,
-				"height": 800,
-				"top": 100
+				"height": 800
 			}]
 		}, {
 			"title": {
 				"type": "text",
-				"color": "#ffffff",
+				"color": "#D5FD58",
 				"content": "Shoe - Notifier",
 				"top": 80,
 				"left": 80,
@@ -653,7 +659,7 @@
 		}, {
 			"title": {
 				"type": "text",
-				"color": "#ffffff",
+				"color": "#D5FD58",
 				"content": "Shoe - Consumer",
 				"top": 80,
 				"left": 80,
@@ -680,7 +686,7 @@
 		}, {
 			"title": {
 				"type": "text",
-				"color": "#ffffff",
+				"color": "#D5FD58",
 				"content": "Shoe detail",
 				"top": 80,
 				"left": 80,
@@ -700,7 +706,7 @@
 				"type": "image",
 				"src": "provider/notifier_onitempressed.png",
 				"align": "center|left",
-				"top": 325,
+				"top": 285,
 				"left": 80,
 				"width": 750,
 				"height": 700
@@ -708,7 +714,7 @@
 				"type": "image",
 				"src": "provider/detail_navigatorservice.png",
 				"align": "center|left",
-				"top": 800,
+				"top": 725,
 				"left": 80,
 				"width": 750,
 				"height": 700
@@ -724,7 +730,7 @@
 		}, {
 			"title": {
 				"type": "text",
-				"color": "#ffffff",
+				"color": "#D5FD58",
 				"content": "Migrating from Scoped Model to Provider",
 				"top": 80,
 				"left": 80,
@@ -768,7 +774,7 @@
 		}, {
 			"title": {
 				"type": "text",
-				"color": "#ffffff",
+				"color": "#D5FD58",
 				"content": "Provider Libraries",
 				"top": 80,
 				"left": 80,
