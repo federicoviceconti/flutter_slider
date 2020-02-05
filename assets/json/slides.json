@@ -8,7 +8,7 @@
 			"height": 1080
 		},
 		"title": "Flutter state managment",
-		"description": "insert description",
+		"description": "State management is an hot topic in Flutter. We can find several question and answer. But which is the best choice?",
 		"authors": [{
 				"name": "Federico",
 				"surname": "Viceconti"
@@ -23,7 +23,7 @@
 			}
 		],
 		"slides": [{
-		    "has_logo": false,
+			"has_logo": false,
 			"src": "background_ntt.png",
 			"transition_in": "ease_in",
 			"transition_out": "ease_out",
@@ -39,6 +39,78 @@
 				"bottom": 35,
 				"left": 55,
 				"marginTop": 180
+			}]
+		}, {
+			"title": {
+				"type": "text",
+				"color": "#D5FD58",
+				"content": "Flutter State Management",
+				"top": 80,
+				"left": 80,
+				"size": 60
+			},
+			"transition_in": "ease_in",
+			"transition_out": "ease_out",
+			"elements": [{
+				"type": "image",
+				"hasShape": true,
+				"color": "#000000",
+				"align": "center|left",
+				"top": 35,
+				"bottomText": {
+					"content": "<b>Why</b>\nFlutter",
+					"textAlign": "center",
+					"color": "#ffffff",
+					"size": 40,
+					"width": -2,
+					"height": -2
+				},
+				"left": 400,
+				"right": 25,
+				"bottom": 25,
+				"width": 350,
+				"height": 350,
+				"src": "fabio.png"
+			}, {
+				"type": "image",
+				"hasShape": true,
+				"color": "#000000",
+				"align": "center",
+				"top": 35,
+				"bottomText": {
+					"content": "Flutter\n<b>Bloc</b>",
+					"textAlign": "center",
+					"color": "#ffffff",
+					"size": 40,
+					"width": -2,
+					"height": -2
+				},
+				"left": 25,
+				"right": 25,
+				"bottom": 25,
+				"width": 350,
+				"height": 350,
+				"src": "marco.png"
+			}, {
+				"type": "image",
+				"hasShape": true,
+				"color": "#000000",
+				"align": "center|right",
+				"top": 35,
+				"bottomText": {
+					"content": "Flutter\n<b>Provider</b>",
+					"textAlign": "center",
+					"color": "#ffffff",
+					"size": 40,
+					"width": -2,
+					"height": -2
+				},
+				"left": 25,
+				"right": 400,
+				"bottom": 25,
+				"width": 350,
+				"height": 350,
+				"src": "vice.png"
 			}]
 		}, {
 			"title": {
@@ -283,7 +355,7 @@
 				"width": 700
 			}]
 		}, {
-		    "has_logo": false,
+			"has_logo": false,
 			"background_color": "#ffffff",
 			"title": {
 				"type": "text",
@@ -298,7 +370,7 @@
 			"transition_out": "ease_out",
 			"elements": []
 		}, {
-		    "has_logo": false,
+			"has_logo": false,
 			"transition_in": "ease_in",
 			"transition_out": "ease_out",
 			"elements": [{
@@ -328,24 +400,6 @@
 				"left": 260,
 				"size": 36,
 				"top": 200
-			}]
-		}, {
-			"title": {
-				"type": "text",
-				"color": "#D5FD58",
-				"content": "BLoC Design guidelines",
-				"top": 80,
-				"left": 80,
-				"size": 60
-			},
-			"transition_in": "ease_in",
-			"transition_out": "ease_out",
-			"elements": [{
-				"type": "text",
-				"color": "#ffffff",
-				"content": "● Inputs and outputs are simple <b>Streams/Sinks</b> only\n\n● Dependencies must be <b>injectable and platform agnostic</b>\n\n● <b>No platform</b> branching allowed\n\n● Implementation can be whatever you want if you follow the previous rules.",
-				"size": 55,
-				"align": "center"
 			}]
 		}, {
 			"title": {
@@ -394,6 +448,24 @@
 			"title": {
 				"type": "text",
 				"color": "#D5FD58",
+				"content": "BLoC Design guidelines",
+				"top": 80,
+				"left": 80,
+				"size": 60
+			},
+			"transition_in": "ease_in",
+			"transition_out": "ease_out",
+			"elements": [{
+				"type": "text",
+				"color": "#ffffff",
+				"content": "● Inputs and outputs are simple <b>Streams/Sinks</b> only\n\n● Dependencies must be <b>injectable and platform agnostic</b>\n\n● <b>No platform</b> branching allowed\n\n● Implementation can be whatever you want if you follow the previous rules.",
+				"size": 55,
+				"align": "center"
+			}]
+		}, {
+			"title": {
+				"type": "text",
+				"color": "#D5FD58",
 				"content": "BLoC - ShoesBloc",
 				"top": 80,
 				"left": 80,
@@ -405,6 +477,7 @@
 				"type": "image",
 				"src": "shoes_bloc.png",
 				"align": "center|left",
+				"top": 85,
 				"left": 80,
 				"width": 900,
 				"height": 900
@@ -433,8 +506,9 @@
 				"src": "shoes_stream_builder.png",
 				"align": "center|left",
 				"left": 80,
-				"width": 900,
-				"height": 900
+				"top": 90,
+				"width": 800,
+				"height": 800
 			}, {
 				"type": "app",
 				"name": "provider",
@@ -460,8 +534,8 @@
 				"src": "shoes_tap_bloc.png",
 				"align": "center|left",
 				"left": 80,
-				"width": 750,
-				"height": 700
+				"width": 950,
+				"height": 900
 			}, {
 				"type": "app",
 				"name": "provider",
@@ -490,7 +564,7 @@
 				"align": "center"
 			}]
 		}, {
-		    "has_logo": false,
+			"has_logo": false,
 			"background_color": "#ffffff",
 			"title": {
 				"type": "text",
@@ -505,7 +579,7 @@
 			"transition_out": "ease_out",
 			"elements": []
 		}, {
-		    "has_logo": false,
+			"has_logo": false,
 			"transition_in": "ease_in",
 			"transition_out": "ease_out",
 			"elements": [{
@@ -580,7 +654,7 @@
 			"elements": [{
 				"type": "text",
 				"color": "#ffffff",
-				"content": "● Principal components are: <b>Provider, Notifier and Consumer</b>.\n\n● Better design fine grained notifier\n\n● No global state (antipattern): this could cause possible crash or unpredictable state",
+				"content": "● Principal components are: <b>Provider, Notifier and Consumer</b>.\n\n● Better design fine grained notifier\n\n● Dependency could be done with <b>ProxyProvider</b> or <b>get_it</b>",
 				"size": 55,
 				"align": "center"
 			}]
@@ -793,11 +867,11 @@
 			"transition_in": "ease_in",
 			"transition_out": "ease_out",
 			"elements": [{
-				"type": "text",
-				"color": "#ffffff",
-				"content": "Q&A",
+				"type": "image",
 				"align": "center",
-				"size": 140
+				"width": 1200,
+				"height": 1000,
+				"src": "thank_you.png"
 			}]
 		}]
 	}
