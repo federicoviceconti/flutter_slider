@@ -1208,7 +1208,7 @@
 						"type": "image",
 						"src": "half_juicepass_images.png",
 						"width": 1500,
-						"height": 350,
+						"height": 300,
 						"align": "top|center"
 					},
 					{
@@ -1238,7 +1238,7 @@
 						"type": "image",
 						"src": "half_juicepass_images.png",
 						"width": 1500,
-						"height": 350,
+						"height": 300,
 						"align": "top|center"
 					},
 					{
