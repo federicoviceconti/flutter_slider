@@ -6,8 +6,6 @@ import 'package:flutter_slider/model/element_model.dart';
 import 'package:flutter_slider/model/resolution.dart';
 import 'package:flutter_slider/views/counter_example/counter.dart';
 
-import 'widget/phone_frame.dart';
-
 Color hexToColor(String hexString, {String alphaChannel = 'FF'}) {
   if(hexString != null && hexString.isNotEmpty) {
     return Color(int.parse(hexString.replaceFirst('#', '0x$alphaChannel')));
@@ -60,7 +58,8 @@ TextElement createTextElementFromJson(Map<String, dynamic> json) {
       size: json['size'] != null ? json['size'].toDouble() : 12,
       color: json['color'],
       weight: json['weight'],
-      textAlign: json['textAlign']
+      textAlign: json['textAlign'],
+      accentColor: json['accentColor']
     );
   }
   
@@ -149,101 +148,105 @@ Widget createAnimation(AnimationElement anim) {
 Widget createApp(AppElement app) {
   if(app.name == "provider") {
     var provider = ClipRect(
-      child: FlutterProvider()
+      child: Container()
     );
     return provider;
   }
-
-  var counter = CounterExample();
-  return counter;
+  
+  return CounterExample();
 }
 
 Widget _buildSpan(TextElement text, ResolutionScreen resolution) {
-  var weight = text.weight != null ? FontWeight.values.firstWhere((it) => it.toString() == text.weight, orElse: () => FontWeight.normal) : FontWeight.normal;
-  var textAlign = text.textAlign != null ? TextAlign.values.firstWhere((it) {
+  final weight = text.weight != null ? FontWeight.values.firstWhere((it) => it.toString() == text.weight, orElse: () => FontWeight.normal) : FontWeight.normal;
+  final textAlign = text.textAlign != null ? TextAlign.values.firstWhere((it) {
     return it.toString() == "TextAlign.${text.textAlign}";
   }) : TextAlign.left;
-  var size = text.size != null ? text.size : 30.0;
+  final size = text.size != null ? text.size : 30.0;
+  final textStyle = TextStyle(
+    fontFamily: "FuturaPT",
+    fontWeight: weight,
+    fontSize: resolution.getDimen(size, 'w')
+  );
 
-  List<TextSpan> textList = [];
-  int startSpan = 0;
-  
-  while(startSpan > -1 && startSpan < text.content.length) {
-    var tupla = _buildSpannedText(text, 
-      startSpan: startSpan, 
-      tagStart: "<b>", 
-      tagEnd: "</b>",
-      accentColor: "#D5FD58"
-    );
-    startSpan = tupla.third;
+  List<InlineSpan> textList = _getSpanByText(
+    text.content,
+    accentColor: text?.accentColor ?? "#D5FD58",
+    primaryColor: text?.color,
+    textStyle: textStyle
+  );
 
-    textList.add(TextSpan(
-      text: tupla.first, 
-      style: TextStyle(
-        color: hexToColor(tupla.second)
-      )
-    ));
-  }
   return RichText(
-      textAlign: textAlign,
-      text: TextSpan(
-        style: TextStyle(
-          fontFamily: "FuturaPT",
-          fontWeight: weight,
-          fontSize: resolution.getDimen(size, 'w')
-        ),
-        children: textList
-      ),
-    );
+    textAlign: textAlign,
+    text: TextSpan(
+      style: textStyle,
+      children: textList
+    ),
+  );
 }
 
-//TODO very important: make better!
-/// This method created a spanned text for child in slide
-/// The slide json has some tags that we use to identify the special part, like: "<b></b>"
-Tuple<String, String, int> _buildSpannedText(TextElement text, {int startSpan, String tagStart, String tagEnd, String accentColor}) {
-    var textSpan = text.content;
-    var color = text.color;
-    var bold = text.content.indexOf(tagStart, startSpan);
-    var endBold = text.content.indexOf(tagEnd, startSpan);
-    
-    if(endBold == -1 && bold == -1 && startSpan > 0) {
-      var startIdx = startSpan + 3;
-      var endIdx = text.content.length;
-      textSpan = text.content.substring(startIdx, endIdx);
-      color = text.color;
-      startSpan = -1;
-    } if(endBold == -1 && bold == -1 && startSpan == 0) {
-      textSpan = text.content;
-      color = text.color;
-      startSpan = -1;
-    } else if(bold == -1 && endBold > -1) {
-      var startIdx = startSpan + 2;
-      var endIdx = text.content.indexOf(tagEnd, startSpan);
-      textSpan = text.content.substring(startIdx, endIdx);
-      color = accentColor;
-      startSpan = endIdx + 1;
-    } else if(endBold == -1 && bold > -1) {
-      var startIdx = text.content.indexOf(tagEnd, startSpan);
-      var endIdx = text.content.length - 1;
-      textSpan = text.content.substring(startIdx, endIdx);
-      color = accentColor;
-      startSpan = -1;
-    } else if(bold < endBold && startSpan <= bold) {
-      var startIdx = startSpan;
-      var endIdx = text.content.indexOf(tagStart, startSpan);
-      textSpan = text.content.substring(startIdx, endIdx);
-      color = text.color;
-      startSpan = text.content.indexOf(tagStart, startSpan) + 1;
-    } else if(endBold < bold) {
-      var endIdx = text.content.indexOf(tagEnd, startSpan);
-      textSpan = text.content.substring(startSpan + 2, endIdx);
-      color = accentColor;
-      startSpan = text.content.indexOf(tagEnd, startSpan) + 4;
+List<InlineSpan> _getSpanByText(String labelText, {String accentColor, String primaryColor, TextStyle textStyle}) {
+  int indexCurrent = 0;
+  final List<InlineSpan> texts = [];
+  final startTag = '<b>';
+  final endTag = '</b>';
+
+  if(!labelText.contains(startTag)) {
+    return [TextSpan(
+      text: labelText,
+      style: textStyle.copyWith(
+        color: hexToColor(primaryColor),
+      ),
+    )];
+  }
+
+  while (indexCurrent != -1 && indexCurrent < labelText.length) {
+    int indexStart = labelText.indexOf(startTag, indexCurrent);
+    int indexEnd = labelText.indexOf(endTag, indexStart + startTag.length);
+
+    if (indexStart != -1) {
+      final subText = labelText.substring(indexCurrent, indexStart);
+      texts.add(TextSpan(
+        text: subText,
+        style: textStyle.copyWith(
+          color: hexToColor(primaryColor)
+        ),
+      ));
+    } else if(indexCurrent < labelText.length) {
+      final subText = labelText.substring(indexCurrent, labelText.length);
+      texts.add(TextSpan(
+        text: subText,
+        style: textStyle.copyWith(
+          color: hexToColor(primaryColor)
+        ),
+      ));
+      break;
     }
-    
-    textSpan = textSpan.replaceAll(tagEnd, "");
-    textSpan = textSpan.replaceAll(tagStart, "");
-    return Tuple(textSpan, color, startSpan);
+
+    if (indexEnd != -1) {
+      final subText = getSubstringAndNormalize(
+        labelText, indexStart, indexEnd);
+      
+      texts.add(TextSpan(
+        text: subText,
+        style: textStyle.copyWith(
+          fontWeight: FontWeight.bold,
+          color: hexToColor(accentColor)
+        ),
+      ));
+    }
+
+    indexCurrent = indexEnd + endTag.length;
+
+    print('$labelText $indexCurrent');
+  }
+
+  return texts;
+}
+
+String getSubstringAndNormalize(String str, int indexStart, int indexEnd) {
+  return str.substring(indexStart, indexEnd)
+    .replaceAll('<b>', '')
+    .replaceAll('</b>', '');
 }
 
 _buildBottomText(TextElement text, ResolutionScreen resolution, Size query) {

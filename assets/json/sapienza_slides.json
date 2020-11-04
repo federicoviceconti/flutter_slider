@@ -1,0 +1,26 @@
+{
+    "code": 200,
+    "message": "OK",
+    "result": {
+        "background_color": "#212121",
+        "resolution": {
+            "width": 1920,
+            "height": 1080
+        },
+        "title": "Why flutter works?",
+        "description": "Which framework should you use? Flutter! Today we will explain all the pros and cons, using real showcases",
+        "authors": [
+            {
+                "name": "Federico",
+                "surname": "Viceconti"
+            },
+            {
+                "name": "Marco",
+                "surname": "Facco"
+            }
+        ],
+        "slides": [
+            
+        ]
+    }
+}

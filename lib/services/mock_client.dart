@@ -21,7 +21,7 @@ class MockClient extends AbsClient {
     var firstPartPath = "assets/json";
 
     if(path == ClientPath.SLIDES_PATH) {
-      return await rootBundle.loadString("$firstPartPath/slides.json");
+      return await rootBundle.loadString("$firstPartPath/tech_corner_slides.json");
     }
 
     throw new Exception("Network mock not found! Path: $firstPartPath/$path");

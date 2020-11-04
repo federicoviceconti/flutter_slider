@@ -47,12 +47,14 @@ class TextElement extends ElementModel {
   final String weight;
   final double size;
   final String textAlign;
+  final String accentColor;
 
   TextElement(this.content, { 
     this.size,
     this.color, 
     this.weight, 
-    this.textAlign, 
+    this.textAlign,
+    this.accentColor
   }) : super(ElementConstant.TEXT);
 
   bool isNotEmpty() {

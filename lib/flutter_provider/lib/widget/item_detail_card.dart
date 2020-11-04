@@ -29,7 +29,7 @@ class ItemDetailCard extends StatelessWidget {
   List<Widget> CreateStack(Image image, bool isVideo) {
     List<Widget> list = new List();
     list.add(
-        Container(height: 100, width: 100, child: IconButton(icon: image)));
+        Container(height: 100, width: 100, child: IconButton(icon: image, onPressed: () {},)));
 
     if (isVideo) {
       list.add(Container(height: 100, width: 100, child: Icon( Icons.play_circle_filled, size: 50,), decoration: new BoxDecoration(

@@ -3,7 +3,19 @@ import 'package:flutter_slider/services/api.dart';
 /// The config class contains the principal configuration based, for example,
 /// on build type. You can here, every thing is related to configuration.
 class Config {
-  static Environment environment = Environment.MOCK;
+  static Environment get environment {
+    const env = String.fromEnvironment('environment');
+    switch(env) {
+      case 'coll':
+        return Environment.COLL;
+      case 'dev':
+        return Environment.DEV;
+      case 'prod':
+        return Environment.PROD;
+    }
+
+    return Environment.MOCK;
+  }
 }
 
 class ClientPath {

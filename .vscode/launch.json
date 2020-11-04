@@ -5,9 +5,34 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Flutter",
+            "name": "Mock Desktop",
             "request": "launch",
-            "type": "dart"
+            "type": "dart",
+            "args": [
+                "-d",
+                "macos",
+                "--dart-define=environment=mock"
+            ]
+        },
+        {
+            "name": "Staging Desktop",
+            "request": "launch",
+            "type": "dart",
+            "args": [
+                "-d",
+                "macos",
+                "--dart-define=environment=coll"
+            ]
+        },
+        {
+            "name": "Prod Desktop",
+            "request": "launch",
+            "type": "dart",
+            "args": [
+                "-d",
+                "macos",
+                "--dart-define=environment=prod"
+            ]
         }
     ]
 }
