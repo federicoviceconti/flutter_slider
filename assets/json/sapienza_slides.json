@@ -122,7 +122,28 @@
                 "transition_in": "ease_in",
                 "transition_out": "ease_out",
                 "elements": []
-            },
+			},
+			{
+				"title": {
+					"type": "text",
+					"color": "#D5FD58",
+					"content": "<b>Roadmap</b>",
+					"top": 80,
+					"left": 80,
+					"size": 80
+				},
+				"transition_in": "ease_in",
+				"transition_out": "ease_out",
+				"elements": [
+					{
+						"type": "image",
+						"src": "roadmap.png",
+						"align": "center",
+						"width": 1700,
+						"top": 100
+					}
+				]
+			},
             {
 				"transition_in": "ease_in",
 				"transition_out": "ease_out",
@@ -155,7 +176,7 @@
 						"align": "center",
 						"top": 35,
 						"bottomText": {
-							"content": "Expressive &\nFlexible UI",
+							"content": "Rich community\nsupport",
 							"color": "#ffffff",
 							"textAlign": "center",
 							"size": 40,
@@ -167,7 +188,7 @@
 						"bottom": 25,
 						"width": 350,
 						"height": 350,
-						"src": "ui.png"
+						"src": "performance.png"
 					},
 					{
 						"type": "image",
@@ -176,7 +197,7 @@
 						"align": "center",
 						"top": 35,
 						"bottomText": {
-							"content": "Rich community\nsupport",
+							"content": "Expressive &\nFlexible UI",
 							"color": "#ffffff",
 							"textAlign": "center",
 							"size": 40,
@@ -188,7 +209,7 @@
 						"bottom": 25,
 						"width": 350,
 						"height": 350,
-						"src": "performance.png"
+						"src": "ui.png"
 					}
 				]
             },
@@ -236,7 +257,7 @@
 						"bottom": 25,
 						"width": 350,
 						"height": 350,
-						"src": "ui.png"
+						"src": "performance.png"
 					},
 					{
 						"type": "image",
@@ -257,7 +278,7 @@
 						"bottom": 25,
 						"width": 350,
 						"height": 350,
-						"src": "performance.png"
+						"src": "ui.png"
 					},
                     {
 						"background_color": "#303030",
@@ -322,7 +343,7 @@
 						"bottom": 25,
 						"width": 350,
 						"height": 350,
-						"src": "ui.png"
+						"src": "performance.png"
 					},
 					{
 						"type": "image",
@@ -408,7 +429,7 @@
 						"bottom": 25,
 						"width": 350,
 						"height": 350,
-						"src": "ui.png"
+						"src": "performance.png"
 					},
 					{
 						"type": "image",
@@ -429,7 +450,7 @@
 						"bottom": 25,
 						"width": 350,
 						"height": 350,
-						"src": "performance.png"
+						"src": "ui.png"
 					},
                     {
 						"background_color": "#303030",
