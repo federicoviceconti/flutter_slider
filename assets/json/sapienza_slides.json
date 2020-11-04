@@ -21,6 +21,88 @@
         ],
         "slides": [
             {
+				"title": {
+					"type": "text",
+					"color": "#D5FD58",
+					"content": "<b>Competitors</b>",
+					"top": 80,
+					"left": 80,
+					"size": 80
+				},
+				"transition_in": "ease_in",
+				"transition_out": "ease_out",
+				"elements": [
+					{
+						"type": "image",
+						"hasShape": true,
+						"color": "#000000",
+						"align": "center",
+						"top": 35,
+						"bottomText": {
+							"content": "Other: IONIC, Kotlin Multiplatform (Alpha), Nativescript",
+							"textAlign": "center",
+							"color": "#ffffff",
+							"size": 40
+						},
+						"shouldFlexBottom": false,
+						"left": 25,
+						"right": 25,
+						"bottom": 25,
+						"width": 1200,
+						"height": 800,
+						"src": "competitors_phone.png"
+					}
+				]
+			},
+			{
+				"title": {
+					"type": "text",
+					"color": "#D5FD58",
+					"content": "<b>Competitors</b>",
+					"top": 80,
+					"left": 80,
+					"size": 80
+				},
+				"transition_in": "ease_in",
+				"transition_out": "ease_out",
+				"elements": [
+					{
+						"type": "image",
+						"hasShape": true,
+						"color": "#000000",
+						"align": "center",
+						"top": 100,
+						"width": 1200,
+						"height": 800,
+						"src": "competitors_popularity.png"
+					}
+				]
+			},
+			{
+				"title": {
+					"type": "text",
+					"color": "#D5FD58",
+					"content": "<b>Competitors</b>",
+					"top": 80,
+					"left": 80,
+					"size": 80
+				},
+				"transition_in": "ease_in",
+				"transition_out": "ease_out",
+				"elements": [
+					{
+						"type": "image",
+						"hasShape": true,
+						"color": "#000000",
+						"align": "center",
+						"top": 100,
+						"width": 1200,
+						"height": 800,
+						"src": "who_s_best.png"
+					}
+				]
+			},
+            {
                 "has_logo": false,
                 "background_color": "#212121",
                 "title": {

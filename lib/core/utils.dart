@@ -28,6 +28,7 @@ createElement(Map<String, dynamic> json) {
       TextElement text = createTextElementFromJson(json['bottomText']);
       var image = ImageElement(
         src: json['src'],
+        shouldFlexBottom: json['shouldFlexBottom'] ?? true,
         bottomText: text,
       );
       return commonProperty(image, json);
@@ -130,12 +131,20 @@ Widget createWidget(ElementModel model, ResolutionScreen resolution, Size query)
 _shouldBuildBottomText(ImageElement image, ResolutionScreen resolutionScreen, Size size) {
   var bottom = image.bottomText;
   if(bottom != null && bottom.content.isNotEmpty) {
-    return Flexible(
-      child: Container(
+
+    if(image.shouldFlexBottom) {
+      return Flexible(
+        child: Container(
+          alignment: Alignment.center,
+          child: _buildBottomText(image.bottomText, resolutionScreen, size),
+        ),
+      );
+    } else {
+      return Container(
         alignment: Alignment.center,
         child: _buildBottomText(image.bottomText, resolutionScreen, size),
-      ),
-    );
+      );
+    }
   }
 
   return Container();

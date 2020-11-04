@@ -65,8 +65,9 @@ class TextElement extends ElementModel {
 class ImageElement extends ElementModel {
   final String src;
   final TextElement bottomText;
+  final bool shouldFlexBottom;
 
-  ImageElement({this.src, this.bottomText}) : super(ElementConstant.IMAGE);
+  ImageElement({this.src, this.bottomText, this.shouldFlexBottom = true}) : super(ElementConstant.IMAGE);
 }
 
 class AppElement extends ElementModel {
