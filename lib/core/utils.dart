@@ -1,10 +1,11 @@
 import 'package:flare_flutter/flare_actor.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:flutter_slider/core/constants.dart';
-import 'package:flutter_slider/flutter_provider/lib/main.dart';
 import 'package:flutter_slider/model/element_model.dart';
 import 'package:flutter_slider/model/resolution.dart';
 import 'package:flutter_slider/views/counter_example/counter.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 Color hexToColor(String hexString, {String alphaChannel = 'FF'}) {
   if(hexString != null && hexString.isNotEmpty) {
@@ -76,6 +77,7 @@ commonProperty<T extends ElementModel>(T element, json) {
   element.right = json['right']?.toDouble() ?? 0;
   element.bottom = json['bottom']?.toDouble() ?? 0;
   element.align = json['align'];
+  element.link = json['link'];
   element.marginTop = json['marginTop']?.toDouble() ?? 0;
   element.marginLeft = json['marginLeft']?.toDouble() ?? 0;
   element.marginRight = json['marginRight']?.toDouble() ?? 0;
@@ -87,8 +89,6 @@ commonProperty<T extends ElementModel>(T element, json) {
 Widget createWidget(ElementModel model, ResolutionScreen resolution, Size query) {
   var type = model.elementType;
   Widget child = Container();
-
-  //TODO make better
   resolution.currentResolution = Resolution(height: query.height.toInt(), width: query.width.toInt());
 
   switch(type) {
@@ -335,35 +335,50 @@ Widget _buildCommonProperty(ElementModel model, Widget widget, ResolutionScreen 
     bottom: resolution.getDimen(bottom, 'h')
   );
 
+  Widget renderWidget = Container();
+
   if(!hasShape(model)) {
     if(model.elementType == null || model.elementType.isEmpty) {
-      return Container(
+      renderWidget = Container(
         padding: edgeInset,
         child: Container(
-          child: widget, 
+          child: _buildGestureDetectorWidget(model, widget), 
           color: color,
         ),
       );
     } else {
-      return Container(
+      renderWidget = Container(
         color: color,
         padding: edgeInset,
-        child: widget,
+        child: _buildGestureDetectorWidget(model, widget),
       );
     }
   }
 
-  return !hasShape(model) ? Container(
-    padding: edgeInset,
-    child: Container(child: widget, color: color,),
-  ) : Container(
-    decoration: BoxDecoration(
-      shape: BoxShape.circle,
-      color: color
-    ),
-    padding: edgeInset,
-    child: widget,
-  );
+  return renderWidget;
+}
+
+_buildGestureDetectorWidget(ElementModel model, Widget widget) {
+  if(model.link != null) {
+    return MouseRegion(
+      cursor: SystemMouseCursors.click,
+      child: GestureDetector(
+        behavior: HitTestBehavior.opaque,
+        onTap: () {
+          onWidgetTap(model.link);
+        },
+        child: widget,
+      ),
+    );
+  }
+
+  return widget;
+}
+
+onWidgetTap(String link) async {
+  if(await canLaunch(link)) {
+    await launch(link);
+  }
 }
 
 bool hasShape(ElementModel model) => false; //TODO

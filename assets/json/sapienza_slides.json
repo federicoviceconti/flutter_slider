@@ -75,6 +75,41 @@
 						"width": 1200,
 						"height": 800,
 						"src": "competitors_popularity.png"
+					},
+					{
+						"type": "image",
+						"hasShape": true,
+						"color": "#000000",
+						"align": "left",
+						"top": 920,
+						"left": 490,
+						"src": "github.png",
+						"width": 40,
+						"height": 40,
+						"link": "https://github.com/facebook/react-native"
+					},
+					{
+						"type": "image",
+						"hasShape": true,
+						"color": "#000000",
+						"align": "center",
+						"top": 800,
+						"width": 40,
+						"height": 40,
+						"src": "github.png",
+						"link": "https://github.com/flutter/flutter"
+					},
+					{
+						"type": "image",
+						"hasShape": true,
+						"color": "#000000",
+						"align": "top|right",
+						"top": 920,
+						"right": 490,
+						"width": 40,
+						"height": 40,
+						"src": "github.png",
+						"link": "https://github.com/xamarin"
 					}
 				]
 			},

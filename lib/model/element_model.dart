@@ -7,6 +7,7 @@ class ElementModel {
   double top, left, right, bottom;
   String align;
   String backgroundColor;
+  String link;
   double marginBottom;
   double marginLeft;
   double marginRight;
@@ -26,7 +27,8 @@ class ElementModel {
     this.marginRight,
     this.marginLeft,
     this.marginBottom,
-    this.backgroundColor
+    this.backgroundColor,
+    this.link
   });
 
   static List<ElementModel> fromSlideJson(result) {
