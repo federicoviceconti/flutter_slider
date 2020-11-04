@@ -633,6 +633,77 @@
                         "top": 100
 					}
 				]
+            },
+            {
+				"transition_in": "ease_in",
+				"transition_out": "ease_out",
+				"elements": [
+					{
+						"type": "image",
+                        "src": "half_juicepass_images.png",
+                        "width": 1500,
+                        "height": 350, 
+                        "align": "top|center"
+                    },
+                    {
+						"background_color": "#303030",
+                        "top": 400,
+                        "align": "top|center",
+						"width": 1200,
+						"height": 1
+                    },
+                    {
+						"type": "text",
+						"color": "#ffffff",
+						"content": "● It allows customers to charge on public and domestic charging stations\n\n● It supports charge in Italy, Spain, Romania, US, Chile, North America and more\n\n● The new app is written in Flutter and all the old functionality was ported from the old one in Xamarin Native\n\n● Smartphone communicate with CU with NFC chip (it was implemented natively)",
+						"size": 38,
+                        "align": "center",
+                        "top": 350,
+                        "left": 220,
+                        "right": 220
+					}
+				]
+            },
+            {
+				"transition_in": "ease_in",
+				"transition_out": "ease_out",
+				"elements": [
+					{
+						"type": "image",
+                        "src": "half_juicepass_images.png",
+                        "width": 1500,
+                        "height": 350, 
+                        "align": "top|center"
+                    },
+                    {
+						"background_color": "#303030",
+                        "top": 400,
+                        "align": "top|center",
+						"width": 1200,
+						"height": 1
+                    },
+                    {
+						"type": "text",
+						"color": "#ffffff",
+						"content": "<b>It was good because...</b>\n\n● it was easy to port all the functionality, in a brief time\n\n● we can work easily with NFC (Android)\n\n● we are using <b>provider</b> pattern, that simplified all the complex charging logic\n\n● we didn’t found any issues when we try to upgrade the Flutter version",
+						"size": 36,
+                        "align": "center",
+                        "top": 350,
+                        "left": 220,
+                        "right": 960
+                    },
+                    {
+						"type": "text",
+						"color": "#ffffff",
+						"content": "<b>The critical points were...</b>\n\n● the hot reload not always is your best friend. Re-run your app when you make heavy tasks. (Now works better on latest stable release)\n\n● you have to coordinate at the best as you can to make sure all your widget should be used (avoid duplicate code)",
+						"size": 36,
+                        "align": "center",
+                        "top": 350,
+                        "left": 1000,
+                        "right": 220,
+                        "bottom": 80
+					}
+				]
 			}
         ]
     }
