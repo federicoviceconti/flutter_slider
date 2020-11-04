@@ -10,7 +10,6 @@ class RoundButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return buildRoundButton(
         this.width, this.height, icon, this.backgroundColor);
   }

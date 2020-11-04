@@ -144,7 +144,17 @@
 				},
 				"transition_in": "ease_in",
 				"transition_out": "ease_out",
-				"elements": []
+				"elements": [
+					{
+						"type": "image",
+						"src": "flutter_logo_blue.png",
+						"align": "bottom|left",
+						"width": 350,
+						"height": 150,
+						"bottom": 107,
+						"left": 460
+					}
+				]
 			},
 			{
 				"title": {
@@ -175,7 +185,7 @@
 				"title": {
 					"type": "text",
 					"color": "#45D1FD",
-					"content": "Roadmap",
+					"content": "Roadmap 🕒",
 					"align": "bottom|left",
 					"bottom": 80,
 					"left": 130,

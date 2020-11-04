@@ -63,19 +63,19 @@ class _MyHomePageState extends State<MyHomePage> {
       items: const <BottomNavigationBarItem>[
         BottomNavigationBarItem(
           icon: Icon(Icons.home),
-          title: Text('Home'),
+          label: 'Home',
         ),
         BottomNavigationBarItem(
           icon: Icon(Icons.shopping_cart),
-          title: Text('Cart'),
+          label: 'Cart',
         ),
         BottomNavigationBarItem(
           icon: Icon(Icons.location_on),
-          title: Text('Store'),
+          label: 'Store',
         ),
         BottomNavigationBarItem(
           icon: Icon(Icons.account_circle),
-          title: Text('Account'),
+          label: 'Account',
         ),
       ],
       currentIndex: 0,

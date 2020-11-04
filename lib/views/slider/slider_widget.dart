@@ -65,19 +65,14 @@ class SliderWidget extends StatelessWidget {
         keyCode = data.keyCode;
         var slider = notifier?.slider;
         if(slider != null) {
-          var transitionIn = slider?.slides[_pageController.page.toInt()]?.transitionIn;
           var length = slider.slides.length - 1 ?? 0;
           
           if (keyCode == KeyCode.right && _pageController.page < length) {
-            print("next page ${_pageController.page}");
             _pageController?.nextPage(duration: Duration(milliseconds: 500), curve: Curves.ease);
           } else if (keyCode == KeyCode.left && _pageController.page > 0) {
-            print("previous page ${_pageController.page}");
             _pageController?.previousPage(duration: Duration(milliseconds: 500), curve: Curves.ease);
           } else if (keyCode == KeyCode.r) {
             notifier.onModelInit();
-          } else if(keyCode == KeyCode.f) {
-            //TODO fullscreen();
           }
         }
         break;

@@ -9,16 +9,16 @@ class ItemDetailCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ItemDetail(image, backgroundColor, isVideo);
+    return buildItemDetail(image, backgroundColor, isVideo);
   }
 
-  Padding ItemDetail(Image image, Color backgroundColor, bool isVideo) {
+  Padding buildItemDetail(Image image, Color backgroundColor, bool isVideo) {
     return Padding(
         padding: EdgeInsets.only(right: 10.0),
         child: Container(
           width: 100,
           height: 50,
-          child: Stack(children: CreateStack(image, isVideo)),
+          child: Stack(children: buildCreateStack(image, isVideo)),
           decoration: new BoxDecoration(
             color: backgroundColor,
             borderRadius: BorderRadius.circular(5.0),
@@ -26,7 +26,7 @@ class ItemDetailCard extends StatelessWidget {
         ));
   }
 
-  List<Widget> CreateStack(Image image, bool isVideo) {
+  List<Widget> buildCreateStack(Image image, bool isVideo) {
     List<Widget> list = new List();
     list.add(
         Container(height: 100, width: 100, child: IconButton(icon: image, onPressed: () {},)));

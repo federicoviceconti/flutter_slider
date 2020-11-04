@@ -379,8 +379,6 @@ onWidgetTap(String link) async {
   }
 }
 
-bool hasShape(ElementModel model) => false; //TODO
-
 Widget _buildWidgetDimensions(Widget widget, ResolutionScreen resolution, {double height = -1, double width = -1}) {
   if(isDimensionValid(width) && isDimensionValid(height)) {
     return Container(
