@@ -20,7 +20,22 @@
             }
         ],
         "slides": [
-            
+            {
+                "has_logo": false,
+                "background_color": "#212121",
+                "title": {
+                    "type": "text",
+                    "color": "#D5FD58",
+                    "content": "Why Flutter works! 👩‍💻👨‍💻",
+                    "align": "bottom|left",
+                    "bottom": 80,
+                    "left": 130,
+                    "size": 140
+                },
+                "transition_in": "ease_in",
+                "transition_out": "ease_out",
+                "elements": []
+            }
         ]
     }
 }
