@@ -63,27 +63,6 @@
 						"align": "center",
 						"top": 35,
 						"bottomText": {
-							"content": "<b>Federico Viceconti</b>\nfederico.viceconti@nttdata.com",
-							"textAlign": "center",
-							"color": "#ffffff",
-							"size": 40,
-							"width": -2,
-							"height": -2
-						},
-						"left": 25,
-						"right": 650,
-						"bottom": 25,
-						"width": 600,
-						"height": 350,
-						"src": "circle_vice.png"
-					},
-					{
-						"type": "image",
-						"hasShape": true,
-						"color": "#000000",
-						"align": "center",
-						"top": 35,
-						"bottomText": {
 							"content": "<b>Marco Facco</b>\nmarco.facco@nttdata.com",
 							"color": "#ffffff",
 							"textAlign": "center",
@@ -97,6 +76,28 @@
 						"width": 600,
 						"height": 350,
 						"src": "circle_marco.png"
+					},
+					{
+						"type": "image",
+						"hasShape": true,
+						"color": "#000000",
+						"align": "center",
+						"top": 35,
+						"bottomText": {
+							"content": "<b>Federico Viceconti</b>\nfederico.viceconti@nttdata.com",
+							"textAlign": "center",
+							"color": "#ffffff",
+							"size": 40,
+							"width": -2,
+							"height": -2
+						},
+						"left": 25,
+						"right": 650,
+						"bottom": 25,
+						"width": 600,
+						"height": 350,
+						"src": "circle_vice.png",
+						"link": "https://federicoviceconti.com"
 					}
 				]
 			},
