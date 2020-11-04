@@ -163,7 +163,7 @@ Widget _buildSpan(TextElement text, ResolutionScreen resolution) {
   }) : TextAlign.left;
   final size = text.size != null ? text.size : 30.0;
   final textStyle = TextStyle(
-    fontFamily: "FuturaPT",
+    fontFamily: "Arial",
     fontWeight: weight,
     fontSize: resolution.getDimen(size, 'w')
   );

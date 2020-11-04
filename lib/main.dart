@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
-        fontFamily: 'Muli'
+        fontFamily: 'Arial'
       ),
       home: MultiProvider(
         providers: setupProviderServices(),

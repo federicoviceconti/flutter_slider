@@ -85,6 +85,29 @@
                 "elements": []
             },
             {
+				"title": {
+					"type": "text",
+					"color": "#D5FD58",
+					"content": "<b>Flutter</b>",
+					"top": 80,
+					"left": 80,
+					"size": 80
+				},
+				"transition_in": "ease_in",
+				"transition_out": "ease_out",
+				"elements": [
+					{
+						"type": "text",
+						"color": "#ffffff",
+						"content": "● Flutter is Google’s UI Toolkit <b>made by Google</b>, used to create modern application with enhanced UI\n\n● Allows to target, using an unique codebase to: mobile apps (iOS, Android, Google Fuchsia), desktop application and website\n\n● It uses Dart as programming language\n\n● It’s open source",
+						"size": 40,
+                        "align": "center",
+                        "left": 80,
+                        "right": 80
+					}
+				]
+			},
+            {
                 "has_logo": false,
                 "background_color": "#212121",
                 "title": {
@@ -100,6 +123,75 @@
                 "transition_out": "ease_out",
                 "elements": []
             },
+            {
+				"transition_in": "ease_in",
+				"transition_out": "ease_out",
+				"elements": [
+					{
+						"type": "image",
+						"hasShape": true,
+						"color": "#000000",
+						"align": "center",
+						"top": 35,
+						"bottomText": {
+							"content": "Fast\ndevelopment",
+							"textAlign": "center",
+							"color": "#ffffff",
+							"size": 40,
+							"width": -2,
+							"height": -2
+						},
+						"left": 25,
+						"right": 25,
+						"bottom": 25,
+						"width": 350,
+						"height": 350,
+						"src": "fastdev.png"
+					},
+					{
+						"type": "image",
+						"hasShape": true,
+						"color": "#000000",
+						"align": "center",
+						"top": 35,
+						"bottomText": {
+							"content": "Expressive &\nFlexible UI",
+							"color": "#ffffff",
+							"textAlign": "center",
+							"size": 40,
+							"width": -2,
+							"height": -2
+						},
+						"left": 900,
+						"right": 25,
+						"bottom": 25,
+						"width": 350,
+						"height": 350,
+						"src": "ui.png"
+					},
+					{
+						"type": "image",
+						"hasShape": true,
+						"color": "#000000",
+						"align": "center",
+						"top": 35,
+						"bottomText": {
+							"content": "Native\nperformance",
+							"color": "#ffffff",
+							"textAlign": "center",
+							"size": 40,
+							"width": -2,
+							"height": -2
+						},
+						"left": 25,
+						"right": 900,
+						"bottom": 25,
+						"width": 350,
+						"height": 350,
+						"src": "performance.png"
+					}
+				]
+			},
             {
                 "has_logo": false,
                 "background_color": "#212121",
