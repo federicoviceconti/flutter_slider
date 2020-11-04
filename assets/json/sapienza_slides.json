@@ -910,7 +910,24 @@
 						"size": 40,
 						"align": "center|left",
 						"left": 80,
-						"right": 300
+						"right": 600
+					},
+					{
+						"type": "image",
+						"align": "top|right",
+						"width": 550,
+						"height": 550,
+						"top": 100,
+						"right": 40,
+						"src": "data-counter-provider.png"
+					},
+					{
+						"type": "image",
+						"top": 600,
+						"align": "top|right",
+						"width": 550,
+						"right": 40,
+						"src": "data-provider.png"
 					}
 				]
 			},
