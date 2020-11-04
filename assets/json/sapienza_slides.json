@@ -35,6 +35,166 @@
                 "transition_in": "ease_in",
                 "transition_out": "ease_out",
                 "elements": []
+            },
+            {
+                "has_logo": false,
+                "background_color": "#212121",
+                "title": {
+                    "type": "text",
+                    "color": "#45D1FD",
+                    "content": "About us",
+                    "align": "bottom|left",
+                    "bottom": 80,
+                    "left": 130,
+                    "size": 140
+                },
+                "transition_in": "ease_in",
+                "transition_out": "ease_out",
+                "elements": []
+            },
+            {
+                "has_logo": false,
+                "background_color": "#212121",
+                "title": {
+                    "type": "text",
+                    "color": "#45D1FD",
+                    "content": "About M&CT",
+                    "align": "bottom|left",
+                    "bottom": 80,
+                    "left": 130,
+                    "size": 140
+                },
+                "transition_in": "ease_in",
+                "transition_out": "ease_out",
+                "elements": []
+            },
+            {
+                "has_logo": false,
+                "background_color": "#212121",
+                "title": {
+                    "type": "text",
+                    "color": "#45D1FD",
+                    "content": "Flutter",
+                    "align": "bottom|left",
+                    "bottom": 80,
+                    "left": 130,
+                    "size": 140
+                },
+                "transition_in": "ease_in",
+                "transition_out": "ease_out",
+                "elements": []
+            },
+            {
+                "has_logo": false,
+                "background_color": "#212121",
+                "title": {
+                    "type": "text",
+                    "color": "#45D1FD",
+                    "content": "Roadmap",
+                    "align": "bottom|left",
+                    "bottom": 80,
+                    "left": 130,
+                    "size": 140
+                },
+                "transition_in": "ease_in",
+                "transition_out": "ease_out",
+                "elements": []
+            },
+            {
+                "has_logo": false,
+                "background_color": "#212121",
+                "title": {
+                    "type": "text",
+                    "color": "#45D1FD",
+                    "content": "Dart",
+                    "align": "bottom|left",
+                    "bottom": 80,
+                    "left": 130,
+                    "size": 140
+                },
+                "transition_in": "ease_in",
+                "transition_out": "ease_out",
+                "elements": []
+            },
+            {
+                "has_logo": false,
+                "background_color": "#212121",
+                "title": {
+                    "type": "text",
+                    "color": "#D5FD58",
+                    "content": "Provider",
+                    "align": "bottom|left",
+                    "bottom": 80,
+                    "left": 130,
+                    "size": 140
+                },
+                "transition_in": "ease_in",
+                "transition_out": "ease_out",
+                "elements": []
+            },
+            {
+                "has_logo": false,
+                "background_color": "#212121",
+                "title": {
+                    "type": "text",
+                    "color": "#D5FD58",
+                    "content": "Competitors 🏆",
+                    "align": "bottom|left",
+                    "bottom": 80,
+                    "left": 130,
+                    "size": 140
+                },
+                "transition_in": "ease_in",
+                "transition_out": "ease_out",
+                "elements": []
+            },
+            {
+                "has_logo": false,
+                "background_color": "#212121",
+                "title": {
+                    "type": "text",
+                    "color": "#D5FD58",
+                    "content": "Is it always the best choice? 🤔",
+                    "align": "bottom|left",
+                    "bottom": 80,
+                    "left": 130,
+                    "size": 140
+                },
+                "transition_in": "ease_in",
+                "transition_out": "ease_out",
+                "elements": []
+            },
+            {
+                "has_logo": false,
+                "background_color": "#212121",
+                "title": {
+                    "type": "text",
+                    "color": "#D5FD58",
+                    "content": "Google Showcase",
+                    "align": "bottom|left",
+                    "bottom": 80,
+                    "left": 130,
+                    "size": 140
+                },
+                "transition_in": "ease_in",
+                "transition_out": "ease_out",
+                "elements": []
+            },
+            {
+                "has_logo": false,
+                "background_color": "#212121",
+                "title": {
+                    "type": "text",
+                    "color": "#D5FD58",
+                    "content": "M&CT Showcase",
+                    "align": "bottom|left",
+                    "bottom": 80,
+                    "left": 130,
+                    "size": 140
+                },
+                "transition_in": "ease_in",
+                "transition_out": "ease_out",
+                "elements": []
             }
         ]
     }
