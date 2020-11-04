@@ -1,90 +1,138 @@
 {
-    "code": 200,
-    "message": "OK",
-    "result": {
-        "background_color": "#212121",
-        "resolution": {
-            "width": 1920,
-            "height": 1080
-        },
-        "title": "Why flutter works?",
-        "description": "Which framework should you use? Flutter! Today we will explain all the pros and cons, using real showcases",
-        "authors": [
-            {
-                "name": "Federico",
-                "surname": "Viceconti"
-            },
-            {
-                "name": "Marco",
-                "surname": "Facco"
-            }
-        ],
-        "slides": [
-            {
-                "has_logo": false,
-                "background_color": "#212121",
-                "title": {
-                    "type": "text",
-                    "color": "#D5FD58",
-                    "content": "Why Flutter works! 👩‍💻👨‍💻",
-                    "align": "bottom|left",
-                    "bottom": 80,
-                    "left": 130,
-                    "size": 140
-                },
-                "transition_in": "ease_in",
-                "transition_out": "ease_out",
-                "elements": []
-            },
-            {
-                "has_logo": false,
-                "background_color": "#212121",
-                "title": {
-                    "type": "text",
-                    "color": "#45D1FD",
-                    "content": "About us",
-                    "align": "bottom|left",
-                    "bottom": 80,
-                    "left": 130,
-                    "size": 140
-                },
-                "transition_in": "ease_in",
-                "transition_out": "ease_out",
-                "elements": []
-            },
-            {
-                "has_logo": false,
-                "background_color": "#212121",
-                "title": {
-                    "type": "text",
-                    "color": "#45D1FD",
-                    "content": "About M&CT",
-                    "align": "bottom|left",
-                    "bottom": 80,
-                    "left": 130,
-                    "size": 140
-                },
-                "transition_in": "ease_in",
-                "transition_out": "ease_out",
-                "elements": []
-            },
-            {
-                "has_logo": false,
-                "background_color": "#212121",
-                "title": {
-                    "type": "text",
-                    "color": "#45D1FD",
-                    "content": "Flutter",
-                    "align": "bottom|left",
-                    "bottom": 80,
-                    "left": 130,
-                    "size": 140
-                },
-                "transition_in": "ease_in",
-                "transition_out": "ease_out",
-                "elements": []
-            },
-            {
+	"code": 200,
+	"message": "OK",
+	"result": {
+		"background_color": "#212121",
+		"resolution": {
+			"width": 1920,
+			"height": 1080
+		},
+		"title": "Why flutter works?",
+		"description": "Which framework should you use? Flutter! Today we will explain all the pros and cons, using real showcases",
+		"authors": [
+			{
+				"name": "Federico",
+				"surname": "Viceconti"
+			},
+			{
+				"name": "Marco",
+				"surname": "Facco"
+			}
+		],
+		"slides": [
+			{
+				"has_logo": false,
+				"background_color": "#212121",
+				"title": {
+					"type": "text",
+					"color": "#D5FD58",
+					"content": "Why Flutter works! 👩‍💻👨‍💻",
+					"align": "bottom|left",
+					"bottom": 80,
+					"left": 130,
+					"size": 140
+				},
+				"transition_in": "ease_in",
+				"transition_out": "ease_out",
+				"elements": []
+			},
+			{
+				"has_logo": false,
+				"background_color": "#212121",
+				"title": {
+					"type": "text",
+					"color": "#45D1FD",
+					"content": "About us",
+					"align": "bottom|left",
+					"bottom": 80,
+					"left": 130,
+					"size": 140
+				},
+				"transition_in": "ease_in",
+				"transition_out": "ease_out",
+				"elements": []
+			},
+			{
+				"transition_in": "ease_in",
+				"transition_out": "ease_out",
+				"elements": [
+					{
+						"type": "image",
+						"hasShape": true,
+						"color": "#000000",
+						"align": "center",
+						"top": 35,
+						"bottomText": {
+							"content": "<b>Federico Viceconti</b>\nfederico.viceconti@nttdata.com",
+							"textAlign": "center",
+							"color": "#ffffff",
+							"size": 40,
+							"width": -2,
+							"height": -2
+						},
+						"left": 25,
+						"right": 650,
+						"bottom": 25,
+						"width": 600,
+						"height": 350,
+						"src": "circle_vice.png"
+					},
+					{
+						"type": "image",
+						"hasShape": true,
+						"color": "#000000",
+						"align": "center",
+						"top": 35,
+						"bottomText": {
+							"content": "<b>Marco Facco</b>\nmarco.facco@nttdata.com",
+							"color": "#ffffff",
+							"textAlign": "center",
+							"size": 40,
+							"width": -2,
+							"height": -2
+						},
+						"left": 650,
+						"right": 25,
+						"bottom": 25,
+						"width": 600,
+						"height": 350,
+						"src": "circle_marco.png"
+					}
+				]
+			},
+			{
+				"has_logo": false,
+				"background_color": "#212121",
+				"title": {
+					"type": "text",
+					"color": "#45D1FD",
+					"content": "About M&CT",
+					"align": "bottom|left",
+					"bottom": 80,
+					"left": 130,
+					"size": 140
+				},
+				"transition_in": "ease_in",
+				"transition_out": "ease_out",
+				"elements": []
+			},
+			{
+				"has_logo": false,
+				"background_color": "#212121",
+				"title": {
+					"type": "text",
+					"color": "#45D1FD",
+					"content": "Flutter",
+					"align": "bottom|left",
+					"bottom": 80,
+					"left": 130,
+					"size": 140
+				},
+				"transition_in": "ease_in",
+				"transition_out": "ease_out",
+				"elements": []
+			},
+			{
 				"title": {
 					"type": "text",
 					"color": "#D5FD58",
@@ -101,27 +149,27 @@
 						"color": "#ffffff",
 						"content": "● Flutter is Google’s UI Toolkit <b>made by Google</b>, used to create modern application with enhanced UI\n\n● Allows to target, using an unique codebase to: mobile apps (iOS, Android, Google Fuchsia), desktop application and website\n\n● It uses Dart as programming language\n\n● It’s open source",
 						"size": 40,
-                        "align": "center",
-                        "left": 80,
-                        "right": 80
+						"align": "center",
+						"left": 80,
+						"right": 80
 					}
 				]
 			},
-            {
-                "has_logo": false,
-                "background_color": "#212121",
-                "title": {
-                    "type": "text",
-                    "color": "#45D1FD",
-                    "content": "Roadmap",
-                    "align": "bottom|left",
-                    "bottom": 80,
-                    "left": 130,
-                    "size": 140
-                },
-                "transition_in": "ease_in",
-                "transition_out": "ease_out",
-                "elements": []
+			{
+				"has_logo": false,
+				"background_color": "#212121",
+				"title": {
+					"type": "text",
+					"color": "#45D1FD",
+					"content": "Roadmap",
+					"align": "bottom|left",
+					"bottom": 80,
+					"left": 130,
+					"size": 140
+				},
+				"transition_in": "ease_in",
+				"transition_out": "ease_out",
+				"elements": []
 			},
 			{
 				"title": {
@@ -144,7 +192,7 @@
 					}
 				]
 			},
-            {
+			{
 				"transition_in": "ease_in",
 				"transition_out": "ease_out",
 				"elements": [
@@ -212,12 +260,12 @@
 						"src": "ui.png"
 					}
 				]
-            },
-            {
+			},
+			{
 				"transition_in": "ease_in",
 				"transition_out": "ease_out",
 				"elements": [
-                    {
+					{
 						"type": "image",
 						"hasShape": true,
 						"color": "#000000",
@@ -280,30 +328,30 @@
 						"height": 350,
 						"src": "ui.png"
 					},
-                    {
+					{
 						"background_color": "#303030",
-                        "top": 400,
-                        "align": "top|center",
+						"top": 400,
+						"align": "top|center",
 						"width": 1200,
 						"height": 1
-                    },
-                    {
+					},
+					{
 						"type": "text",
 						"color": "#ffffff",
 						"content": "● Delight your users with Flutter's built-in beautiful Material Design (flutter/material), Cupertino (flutter/cupertino)\n\n● Widget-centric (inspired from React): describe view should look like given their current configuration and state\n\n● Simple APIs for animation to build enhanced UI",
 						"size": 38,
-                        "align": "center",
-                        "top": 350,
-                        "left": 220,
-                        "right": 650
+						"align": "center",
+						"top": 350,
+						"left": 220,
+						"right": 650
 					}
 				]
-            },
-            {
+			},
+			{
 				"transition_in": "ease_in",
 				"transition_out": "ease_out",
 				"elements": [
-                    {
+					{
 						"type": "image",
 						"hasShape": true,
 						"color": "#000000",
@@ -366,30 +414,30 @@
 						"height": 350,
 						"src": "performance.png"
 					},
-                    {
+					{
 						"background_color": "#303030",
-                        "top": 400,
-                        "align": "top|center",
+						"top": 400,
+						"align": "top|center",
 						"width": 1200,
 						"height": 1
-                    },
-                    {
+					},
+					{
 						"type": "text",
 						"color": "#ffffff",
 						"content": "● Hot reload/restarts helps you quickly develop features and fix bugs\n\n● It gives tools to inspect UIs like: Inspector, Performance, Layout explorer\n\n● No unexpected results on both platform (Skia for rendering)",
 						"size": 38,
-                        "align": "center",
-                        "top": 350,
-                        "left": 220,
-                        "right": 650
+						"align": "center",
+						"top": 350,
+						"left": 220,
+						"right": 650
 					}
 				]
-            },
-            {
+			},
+			{
 				"transition_in": "ease_in",
 				"transition_out": "ease_out",
 				"elements": [
-                    {
+					{
 						"type": "image",
 						"hasShape": true,
 						"color": "#000000",
@@ -452,58 +500,376 @@
 						"height": 350,
 						"src": "ui.png"
 					},
-                    {
+					{
 						"background_color": "#303030",
-                        "top": 400,
-                        "align": "top|center",
+						"top": 400,
+						"align": "top|center",
 						"width": 1200,
 						"height": 1
-                    },
-                    {
+					},
+					{
 						"type": "text",
 						"color": "#ffffff",
 						"content": "● It has a lot of <b>youtube tutorial compilations</b> and <b>codelabs</b> made by Google developers\n\n● You can find tons of packages on pub.dev\n\n● You can find <b>several communities</b> that talks about Flutter. E.g. r/FlutterDev, Slack community\n\n",
 						"size": 38,
-                        "align": "center",
-                        "top": 350,
-                        "left": 220,
-                        "right": 650
+						"align": "center",
+						"top": 350,
+						"left": 220,
+						"right": 650
 					}
 				]
 			},
-            {
-                "has_logo": false,
-                "background_color": "#212121",
-                "title": {
-                    "type": "text",
-                    "color": "#45D1FD",
-                    "content": "Dart",
-                    "align": "bottom|left",
-                    "bottom": 80,
-                    "left": 130,
-                    "size": 140
-                },
-                "transition_in": "ease_in",
-                "transition_out": "ease_out",
-                "elements": []
-            },
-            {
-                "has_logo": false,
-                "background_color": "#212121",
-                "title": {
-                    "type": "text",
-                    "color": "#D5FD58",
-                    "content": "Provider",
-                    "align": "bottom|left",
-                    "bottom": 80,
-                    "left": 130,
-                    "size": 140
-                },
-                "transition_in": "ease_in",
-                "transition_out": "ease_out",
-                "elements": []
-            },
-            {
+			{
+				"has_logo": false,
+				"background_color": "#212121",
+				"title": {
+					"type": "text",
+					"color": "#45D1FD",
+					"content": "Dart",
+					"align": "bottom|left",
+					"bottom": 80,
+					"left": 130,
+					"size": 140
+				},
+				"transition_in": "ease_in",
+				"transition_out": "ease_out",
+				"elements": [
+					{
+						"type": "image",
+						"src": "dart.png",
+						"align": "bottom|left",
+						"width": 350,
+						"height": 200,
+						"bottom": 70,
+						"left": 380
+					}
+				]
+			},
+			{
+				"title": {
+					"type": "text",
+					"color": "#D5FD58",
+					"content": "<b>Dart</b>",
+					"top": 80,
+					"left": 80,
+					"size": 80
+				},
+				"transition_in": "ease_in",
+				"transition_out": "ease_out",
+				"elements": [
+					{
+						"type": "text",
+						"color": "#ffffff",
+						"content": "● Developed by Google in 2011 to replace JavaScript\n\n● Suitable to develop interactive or data-intensive applications\n\n● Declarative and Object Oriented language\n\n● Fast development",
+						"size": 40,
+						"left": 80,
+						"top": 400
+					},
+					{
+						"type": "image",
+						"src": "dart.png",
+						"width": 500,
+						"height": 350,
+						"left": 1250,
+						"top": 350
+					}
+				]
+			},
+			{
+				"title": {
+					"type": "text",
+					"color": "#D5FD58",
+					"content": "<b>World of widgets</b>",
+					"top": 80,
+					"left": 80,
+					"size": 80
+				},
+				"transition_in": "ease_in",
+				"transition_out": "ease_out",
+				"elements": [
+					{
+						"type": "image",
+						"src": "world_of_widgets.png",
+						"width": 750,
+						"height": 750,
+						"align": "center",
+						"top": 100
+					}
+				]
+			},
+			{
+				"title": {
+					"type": "text",
+					"color": "#D5FD58",
+					"content": "<b>Widgets</b>",
+					"top": 80,
+					"left": 80,
+					"size": 80
+				},
+				"transition_in": "ease_in",
+				"transition_out": "ease_out",
+				"elements": [
+					{
+						"type": "text",
+						"color": "#ffffff",
+						"content": "● Widgets are the building blocks of the UI\n\n● Flutter provide different type of widget\n   to compose the UI\n\n    ● text (Text, RichText)\n\n    ● accessibility (Sematics)\n\n    ● stylistic (TextStyle, BoxDecoration)\n\n    ● layout (Row, Column)\n\n    ● interactive (GestureDetector, InkWell)\n\n    ● animation (Hero)",
+						"size": 36,
+						"left": 80,
+						"top": 250
+					},
+					{
+						"type": "image",
+						"src": "widgets_example.png",
+						"left": 1000,
+						"right": 40
+					}
+				]
+			},
+			{
+				"title": {
+					"type": "text",
+					"color": "#D5FD58",
+					"content": "<b>Stateless vs Stateful</b>",
+					"top": 80,
+					"left": 80,
+					"size": 80
+				},
+				"transition_in": "ease_in",
+				"transition_out": "ease_out",
+				"elements": [
+					{
+						"type": "text",
+						"color": "#ffffff",
+						"content": "● No mutable state\n\n● His properties doesn’t change over time \n\n● His parent maintains his state",
+						"size": 40,
+						"align": "left"
+					},
+					{
+						"type": "text",
+						"color": "#ffffff",
+						"content": "● Mutable state\n\n● His properties change over time \n\n● It stores his state inside itself into an internal class",
+						"size": 40,
+						"align": "right"
+					}
+				]
+			},
+			{
+				"title": {
+					"type": "text",
+					"color": "#D5FD58",
+					"content": "<b>Declare your intentions</b>",
+					"top": 80,
+					"left": 80,
+					"size": 80
+				},
+				"transition_in": "ease_in",
+				"transition_out": "ease_out",
+				"elements": [
+					{
+						"type": "image",
+						"src": "f_state.png",
+						"right": 40
+					}
+				]
+			},
+			{
+				"title": {
+					"type": "text",
+					"color": "#D5FD58",
+					"content": "<b>Think it declaratively</b>",
+					"top": 80,
+					"left": 80,
+					"size": 80
+				},
+				"transition_in": "ease_in",
+				"transition_out": "ease_out",
+				"elements": [
+					{
+						"type": "text",
+						"color": "#ffffff",
+						"content": "● Flutter builds the UI reflecting the current state\n\n● Flutter redraw the UI, when the state change\n\n● Instead of mutate an already existing widget,\n   Flutter rebuild it from scratch\n\n● States in cache => Hot Reload",
+						"size": 40,
+						"left": 80,
+						"top": 350
+					},
+					{
+						"type": "image",
+						"src": "declarative_example.png",
+						"left": 1000,
+						"right": 40
+					}
+				]
+			},
+			{
+				"title": {
+					"type": "text",
+					"color": "#D5FD58",
+					"content": "<b>Flutter call native</b>",
+					"top": 80,
+					"left": 80,
+					"size": 80
+				},
+				"transition_in": "ease_in",
+				"transition_out": "ease_out",
+				"elements": [
+					{
+						"type": "image",
+						"src": "platform.png",
+						"right": 80,
+						"width": 1200,
+						"height": 400,
+						"align": "bottom|right"
+					}
+				]
+			},
+			{
+				"title": {
+					"type": "text",
+					"color": "#D5FD58",
+					"content": "<b>Platform channel</b>",
+					"top": 80,
+					"left": 80,
+					"size": 80
+				},
+				"transition_in": "ease_in",
+				"transition_out": "ease_out",
+				"elements": [
+					{
+						"type": "text",
+						"color": "#ffffff",
+						"content": "● Simple and flexible mechanism\n   that allow Flutter to use\n   platform-specific APIs:\n\n    ● sensor\n\n    ● notification\n\n    ● intent to other apps\n\n    ● native libraries",
+						"size": 40,
+						"left": 80,
+						"top": 350
+					},
+					{
+						"type": "image",
+						"src": "platform_diagram.png",
+						"left": 900,
+						"right": 80
+					}
+				]
+			},
+			{
+				"title": {
+					"type": "text",
+					"color": "#D5FD58",
+					"content": "<b>State management</b>",
+					"top": 80,
+					"left": 80,
+					"size": 80
+				},
+				"transition_in": "ease_in",
+				"transition_out": "ease_out",
+				"elements": [
+					{
+						"type": "image",
+						"src": "bloc_logo.png",
+						"width": 650,
+						"height": 450,
+						"top": 350,
+						"left": 200
+					},
+					{
+						"type": "text",
+						"color": "#ffffff",
+						"content": "Provider",
+						"size": 140,
+						"top": 500,
+						"left": 1120
+					}
+				]
+			},
+			{
+				"has_logo": false,
+				"background_color": "#212121",
+				"title": {
+					"type": "text",
+					"color": "#45D1FD",
+					"content": "<b>BLoC</b>",
+					"align": "bottom|left",
+					"bottom": 80,
+					"left": 130,
+					"size": 140
+				},
+				"transition_in": "ease_in",
+				"transition_out": "ease_out",
+				"elements": []
+			},
+			{
+				"title": {
+					"type": "text",
+					"color": "#D5FD58",
+					"content": "<b>Why Bloc?</b>",
+					"top": 80,
+					"left": 80,
+					"size": 80
+				},
+				"transition_in": "ease_in",
+				"transition_out": "ease_out",
+				"elements": [
+					{
+						"type": "text",
+						"color": "#ffffff",
+						"content": "● Evolution of MVVM architecture\n\n● Separate <b>presentation</b> (UI)\n   from <b>business logic</b>\n\n● Facilitate testing and high reusability\n\n● Specific library for Flutter => flutter_bloc\n\n● Principal component are <b>BlocBuilder</b>,\n   <b>Bloc</b> and <b>State</b>",
+						"size": 40,
+						"left": 80,
+						"top": 350
+					},
+					{
+						"type": "image",
+						"src": "bloc_architecture.png",
+						"left": 900,
+						"right": 80
+					}
+				]
+			},
+			{
+				"transition_in": "ease_in",
+				"transition_out": "ease_out",
+				"elements": [
+					{
+						"type": "image",
+						"src": "bloc_example_1.png",
+						"width": 1000,
+						"height": 1200,
+						"left": 80
+					},
+					{
+						"type": "app",
+						"name": "counter",
+						"top": 100,
+						"left": 1040,
+						"width": 800,
+						"height": 600,
+						"right": 80
+					},
+					{
+						"type": "image",
+						"src": "bloc_example_2.png",
+						"left": 1040,
+						"right": 80,
+						"top": 740
+					}
+				]
+			},
+			{
+				"has_logo": false,
+				"background_color": "#212121",
+				"title": {
+					"type": "text",
+					"color": "#D5FD58",
+					"content": "Provider",
+					"align": "bottom|left",
+					"bottom": 80,
+					"left": 130,
+					"size": 140
+				},
+				"transition_in": "ease_in",
+				"transition_out": "ease_out",
+				"elements": []
+			},
+			{
 				"title": {
 					"type": "text",
 					"color": "#D5FD58",
@@ -520,27 +886,27 @@
 						"color": "#ffffff",
 						"content": "● Built with widgets for widgets\n\n● Easy to understand. It does not need stream, Hooks, Rx etc\n\n● If you work with Stream based library, provider works well (e.g. Firebase)\n\n● Principal components are <b>Provider</b>, <b>Consumer</b> and <b>Notifier</b>\n\n",
 						"size": 40,
-                        "align": "center|left",
-                        "left": 80,
-                        "right": 300
+						"align": "center|left",
+						"left": 80,
+						"right": 300
 					}
 				]
 			},
-            {
-                "has_logo": false,
-                "background_color": "#212121",
-                "title": {
-                    "type": "text",
-                    "color": "#D5FD58",
-                    "content": "Competitors 🏆",
-                    "align": "bottom|left",
-                    "bottom": 80,
-                    "left": 130,
-                    "size": 140
-                },
-                "transition_in": "ease_in",
-                "transition_out": "ease_out",
-                "elements": []
+			{
+				"has_logo": false,
+				"background_color": "#212121",
+				"title": {
+					"type": "text",
+					"color": "#D5FD58",
+					"content": "Competitors 🏆",
+					"align": "bottom|left",
+					"bottom": 80,
+					"left": 130,
+					"size": 140
+				},
+				"transition_in": "ease_in",
+				"transition_out": "ease_out",
+				"elements": []
 			},
 			{
 				"title": {
@@ -659,23 +1025,23 @@
 					}
 				]
 			},
-            {
-                "has_logo": false,
-                "background_color": "#212121",
-                "title": {
-                    "type": "text",
-                    "color": "#D5FD58",
-                    "content": "Is it always the best choice? 🤔",
-                    "align": "bottom|left",
-                    "bottom": 80,
-                    "left": 130,
-                    "size": 100
-                },
-                "transition_in": "ease_in",
-                "transition_out": "ease_out",
-                "elements": []
-            },
-            {
+			{
+				"has_logo": false,
+				"background_color": "#212121",
+				"title": {
+					"type": "text",
+					"color": "#D5FD58",
+					"content": "Is it always the best choice? 🤔",
+					"align": "bottom|left",
+					"bottom": 80,
+					"left": 130,
+					"size": 100
+				},
+				"transition_in": "ease_in",
+				"transition_out": "ease_out",
+				"elements": []
+			},
+			{
 				"title": {
 					"type": "text",
 					"color": "#D5FD58",
@@ -692,29 +1058,29 @@
 						"color": "#ffffff",
 						"content": "<b>PROs</b>\n\n● Easy (and fun)to learn\n\n● It’s perfect for MVP (Minimum Viable Product)\n\n● Reduce compiling time\n\n● It’s really cross. You cannot find difference between native and Flutter app\n\n<b>CONSs</b>\n\n● AR plugins are under development (not ready for production)",
 						"size": 40,
-                        "align": "center|left",
-                        "left": 80,
-                        "right": 300
+						"align": "center|left",
+						"left": 80,
+						"right": 300
 					}
 				]
 			},
-            {
-                "has_logo": false,
-                "background_color": "#212121",
-                "title": {
-                    "type": "text",
-                    "color": "#D5FD58",
-                    "content": "Google Showcase",
-                    "align": "bottom|left",
-                    "bottom": 80,
-                    "left": 130,
-                    "size": 140
-                },
-                "transition_in": "ease_in",
-                "transition_out": "ease_out",
-                "elements": []
-            },
-            {
+			{
+				"has_logo": false,
+				"background_color": "#212121",
+				"title": {
+					"type": "text",
+					"color": "#D5FD58",
+					"content": "Google Showcase",
+					"align": "bottom|left",
+					"bottom": 80,
+					"left": 130,
+					"size": 140
+				},
+				"transition_in": "ease_in",
+				"transition_out": "ease_out",
+				"elements": []
+			},
+			{
 				"title": {
 					"type": "text",
 					"color": "#D5FD58",
@@ -729,29 +1095,29 @@
 					{
 						"type": "image",
 						"src": "google_showcase.png",
-                        "align": "center",
-                        "width": 1200,
-                        "top": 100
+						"align": "center",
+						"width": 1200,
+						"top": 100
 					}
 				]
 			},
-            {
-                "has_logo": false,
-                "background_color": "#212121",
-                "title": {
-                    "type": "text",
-                    "color": "#D5FD58",
-                    "content": "M&CT Showcase",
-                    "align": "bottom|left",
-                    "bottom": 80,
-                    "left": 130,
-                    "size": 140
-                },
-                "transition_in": "ease_in",
-                "transition_out": "ease_out",
-                "elements": []
-            },
-            {
+			{
+				"has_logo": false,
+				"background_color": "#212121",
+				"title": {
+					"type": "text",
+					"color": "#D5FD58",
+					"content": "M&CT Showcase",
+					"align": "bottom|left",
+					"bottom": 80,
+					"left": 130,
+					"size": 140
+				},
+				"transition_in": "ease_in",
+				"transition_out": "ease_out",
+				"elements": []
+			},
+			{
 				"title": {
 					"type": "text",
 					"color": "#D5FD58",
@@ -766,83 +1132,219 @@
 					{
 						"type": "image",
 						"src": "juicepass_images.png",
-                        "align": "center",
-                        "width": 1500,
-                        "top": 100
+						"align": "center",
+						"width": 1500,
+						"top": 100
 					}
 				]
-            },
-            {
+			},
+			{
 				"transition_in": "ease_in",
 				"transition_out": "ease_out",
 				"elements": [
 					{
 						"type": "image",
-                        "src": "half_juicepass_images.png",
-                        "width": 1500,
-                        "height": 350, 
-                        "align": "top|center"
-                    },
-                    {
+						"src": "half_juicepass_images.png",
+						"width": 1500,
+						"height": 350,
+						"align": "top|center"
+					},
+					{
 						"background_color": "#303030",
-                        "top": 400,
-                        "align": "top|center",
+						"top": 400,
+						"align": "top|center",
 						"width": 1200,
 						"height": 1
-                    },
-                    {
+					},
+					{
 						"type": "text",
 						"color": "#ffffff",
 						"content": "● It allows customers to charge on public and domestic charging stations\n\n● It supports charge in Italy, Spain, Romania, US, Chile, North America and more\n\n● The new app is written in Flutter and all the old functionality was ported from the old one in Xamarin Native\n\n● Smartphone communicate with CU with NFC chip (it was implemented natively)",
 						"size": 38,
-                        "align": "center",
-                        "top": 350,
-                        "left": 220,
-                        "right": 220
+						"align": "center",
+						"top": 350,
+						"left": 220,
+						"right": 220
 					}
 				]
-            },
-            {
+			},
+			{
 				"transition_in": "ease_in",
 				"transition_out": "ease_out",
 				"elements": [
 					{
 						"type": "image",
-                        "src": "half_juicepass_images.png",
-                        "width": 1500,
-                        "height": 350, 
-                        "align": "top|center"
-                    },
-                    {
+						"src": "half_juicepass_images.png",
+						"width": 1500,
+						"height": 350,
+						"align": "top|center"
+					},
+					{
 						"background_color": "#303030",
-                        "top": 400,
-                        "align": "top|center",
+						"top": 400,
+						"align": "top|center",
 						"width": 1200,
 						"height": 1
-                    },
-                    {
+					},
+					{
 						"type": "text",
 						"color": "#ffffff",
 						"content": "<b>It was good because...</b>\n\n● it was easy to port all the functionality, in a brief time\n\n● we can work easily with NFC (Android)\n\n● we are using <b>provider</b> pattern, that simplified all the complex charging logic\n\n● we didn’t found any issues when we try to upgrade the Flutter version",
 						"size": 36,
-                        "align": "center",
-                        "top": 350,
-                        "left": 220,
-                        "right": 960
-                    },
-                    {
+						"align": "center",
+						"top": 350,
+						"left": 220,
+						"right": 960
+					},
+					{
 						"type": "text",
 						"color": "#ffffff",
 						"content": "<b>The critical points were...</b>\n\n● the hot reload not always is your best friend. Re-run your app when you make heavy tasks. (Now works better on latest stable release)\n\n● you have to coordinate at the best as you can to make sure all your widget should be used (avoid duplicate code)",
 						"size": 36,
-                        "align": "center",
-                        "top": 350,
-                        "left": 1000,
-                        "right": 220,
-                        "bottom": 80
+						"align": "center",
+						"top": 350,
+						"left": 1000,
+						"right": 220,
+						"bottom": 80
+					}
+				]
+			},
+			{
+				"title": {
+					"type": "text",
+					"color": "#D5FD58",
+					"content": "<b>KeApp</b>",
+					"top": 80,
+					"left": 80,
+					"size": 80
+				},
+				"transition_in": "ease_in",
+				"transition_out": "ease_out",
+				"elements": [
+					{
+						"type": "image",
+						"src": "keapp_screen.png",
+						"align": "center",
+						"width": 1500,
+						"height": 600,
+						"top": 100
+					}
+				]
+			},
+			{
+				"transition_in": "ease_in",
+				"transition_out": "ease_out",
+				"elements": [
+					{
+						"type": "image",
+						"src": "half_keapp_screen.png",
+						"width": 1500,
+						"height": 350,
+						"align": "top|center"
+					},
+					{
+						"background_color": "#303030",
+						"top": 400,
+						"align": "top|center",
+						"width": 1200,
+						"height": 1
+					},
+					{
+						"type": "text",
+						"color": "#ffffff",
+						"content": "● It allows Kena dealers to create new contracts and recharge a sim easily\n\n● It replaced the web application previously used\n\n● The process is 100% paperless and fast thanks to the integration of BlinkID SDK",
+						"size": 38,
+						"align": "center",
+						"top": 350,
+						"left": 220,
+						"right": 220
+					}
+				]
+			},
+			{
+				"title": {
+					"type": "text",
+					"color": "#D5FD58",
+					"content": "<b>Sobos</b>",
+					"top": 80,
+					"left": 80,
+					"size": 80
+				},
+				"transition_in": "ease_in",
+				"transition_out": "ease_out",
+				"elements": [
+					{
+						"type": "image",
+						"src": "sobos_screen.png",
+						"align": "center",
+						"width": 1500,
+						"height": 600,
+						"top": 100
+					}
+				]
+			},
+			{
+				"transition_in": "ease_in",
+				"transition_out": "ease_out",
+				"elements": [
+					{
+						"type": "image",
+						"src": "half_sobos_screen.png",
+						"width": 1500,
+						"height": 350,
+						"align": "top|center"
+					},
+					{
+						"background_color": "#303030",
+						"top": 400,
+						"align": "top|center",
+						"width": 1200,
+						"height": 1
+					},
+					{
+						"type": "text",
+						"color": "#ffffff",
+						"content": "● It allow to monitor the facility’s capacity to respect the latest health and safety standards\n\n● It allow employees to choose and book a place or a room inside the office for themselves or for their entire team\n\n● It allow smart check in at the turnstiles\n\n● It is whitelabel => can be customized for customer",
+						"size": 38,
+						"align": "center",
+						"top": 350,
+						"left": 220,
+						"right": 220
+					}
+				]
+			},
+			{
+				"title": {
+					"type": "text",
+					"color": "#45D1FD",
+					"content": "Any question?",
+					"align": "bottom|center",
+					"size": 80,
+					"bottom": 200
+				},
+				"transition_in": "ease_in",
+				"transition_out": "ease_out",
+				"elements": [
+					{
+						"type": "image",
+						"src": "flutter_question.jpeg",
+						"left": 300,
+						"bottom": 400,
+						"top": 200,
+						"right": 300
+					}
+				]
+			},
+			{
+				"transition_in": "ease_in",
+				"transition_out": "ease_out",
+				"elements": [
+					{
+						"type": "image",
+						"src": "thank_you_blue.png"
 					}
 				]
 			}
-        ]
-    }
+		]
+	}
 }

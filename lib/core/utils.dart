@@ -337,22 +337,20 @@ Widget _buildCommonProperty(ElementModel model, Widget widget, ResolutionScreen 
 
   Widget renderWidget = Container();
 
-  if(!hasShape(model)) {
-    if(model.elementType == null || model.elementType.isEmpty) {
-      renderWidget = Container(
-        padding: edgeInset,
-        child: Container(
-          child: _buildGestureDetectorWidget(model, widget), 
-          color: color,
-        ),
-      );
-    } else {
-      renderWidget = Container(
+  if(model.elementType == null || model.elementType.isEmpty) {
+    renderWidget = Container(
+      padding: edgeInset,
+      child: Container(
+        child: _buildGestureDetectorWidget(model, widget), 
         color: color,
-        padding: edgeInset,
-        child: _buildGestureDetectorWidget(model, widget),
-      );
-    }
+      ),
+    );
+  } else {
+    renderWidget = Container(
+      color: color,
+      padding: edgeInset,
+      child: _buildGestureDetectorWidget(model, widget),
+    );
   }
 
   return renderWidget;
