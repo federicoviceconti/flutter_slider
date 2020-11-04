@@ -260,7 +260,7 @@
 						"src": "performance.png"
 					},
                     {
-						"background_color": "#ffffff",
+						"background_color": "#303030",
                         "top": 400,
                         "align": "top|center",
 						"width": 1200,
@@ -346,7 +346,7 @@
 						"src": "performance.png"
 					},
                     {
-						"background_color": "#ffffff",
+						"background_color": "#303030",
                         "top": 400,
                         "align": "top|center",
 						"width": 1200,
@@ -432,7 +432,7 @@
 						"src": "performance.png"
 					},
                     {
-						"background_color": "#ffffff",
+						"background_color": "#303030",
                         "top": 400,
                         "align": "top|center",
 						"width": 1200,
@@ -483,6 +483,29 @@
                 "elements": []
             },
             {
+				"title": {
+					"type": "text",
+					"color": "#D5FD58",
+					"content": "<b>Provider</b>",
+					"top": 80,
+					"left": 80,
+					"size": 80
+				},
+				"transition_in": "ease_in",
+				"transition_out": "ease_out",
+				"elements": [
+					{
+						"type": "text",
+						"color": "#ffffff",
+						"content": "● Built with widgets for widgets\n\n● Easy to understand. It does not need stream, Hooks, Rx etc\n\n● If you work with Stream based library, provider works well (e.g. Firebase)\n\n● Principal components are <b>Provider</b>, <b>Consumer</b> and <b>Notifier</b>\n\n",
+						"size": 40,
+                        "align": "center|left",
+                        "left": 80,
+                        "right": 300
+					}
+				]
+			},
+            {
                 "has_logo": false,
                 "background_color": "#212121",
                 "title": {
@@ -508,12 +531,35 @@
                     "align": "bottom|left",
                     "bottom": 80,
                     "left": 130,
-                    "size": 140
+                    "size": 100
                 },
                 "transition_in": "ease_in",
                 "transition_out": "ease_out",
                 "elements": []
             },
+            {
+				"title": {
+					"type": "text",
+					"color": "#D5FD58",
+					"content": "<b>Is it always the best choice? 🤔</b>",
+					"top": 80,
+					"left": 80,
+					"size": 80
+				},
+				"transition_in": "ease_in",
+				"transition_out": "ease_out",
+				"elements": [
+					{
+						"type": "text",
+						"color": "#ffffff",
+						"content": "<b>PROs</b>\n\n● Easy (and fun)to learn\n\n● It’s perfect for MVP (Minimum Viable Product)\n\n● Reduce compiling time\n\n● It’s really cross. You cannot find difference between native and Flutter app\n\n<b>CONSs</b>\n\n● AR plugins are under development (not ready for production)",
+						"size": 40,
+                        "align": "center|left",
+                        "left": 80,
+                        "right": 300
+					}
+				]
+			},
             {
                 "has_logo": false,
                 "background_color": "#212121",
@@ -531,6 +577,27 @@
                 "elements": []
             },
             {
+				"title": {
+					"type": "text",
+					"color": "#D5FD58",
+					"content": "<b>Google Showcase</b>",
+					"top": 80,
+					"left": 80,
+					"size": 80
+				},
+				"transition_in": "ease_in",
+				"transition_out": "ease_out",
+				"elements": [
+					{
+						"type": "image",
+						"src": "google_showcase.png",
+                        "align": "center",
+                        "width": 1200,
+                        "top": 100
+					}
+				]
+			},
+            {
                 "has_logo": false,
                 "background_color": "#212121",
                 "title": {
@@ -545,7 +612,28 @@
                 "transition_in": "ease_in",
                 "transition_out": "ease_out",
                 "elements": []
-            }
+            },
+            {
+				"title": {
+					"type": "text",
+					"color": "#D5FD58",
+					"content": "<b>JuicePass</b>",
+					"top": 80,
+					"left": 80,
+					"size": 80
+				},
+				"transition_in": "ease_in",
+				"transition_out": "ease_out",
+				"elements": [
+					{
+						"type": "image",
+						"src": "juicepass_images.png",
+                        "align": "center",
+                        "width": 1500,
+                        "top": 100
+					}
+				]
+			}
         ]
     }
 }
