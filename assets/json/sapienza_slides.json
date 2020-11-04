@@ -123,9 +123,21 @@
 				"transition_out": "ease_out",
 				"elements": [
 					{
+						"background_color": "#B5D2CC",
+						"width": 1920,
+						"height": 100,
+						"align": "top|center"
+					},
+					{
+						"background_color": "#152813",
+						"width": 1920,
+						"height": 100,
+						"align": "bottom|center"
+					},
+					{
 						"type": "image",
 						"src": "portfolio.png",
-						"width": 1890,
+						"width": 1920,
 						"height": 1080
 					}
 				]
