@@ -176,7 +176,7 @@
 						"align": "center",
 						"top": 35,
 						"bottomText": {
-							"content": "Native\nperformance",
+							"content": "Rich community\nsupport",
 							"color": "#ffffff",
 							"textAlign": "center",
 							"size": 40,
@@ -189,6 +189,264 @@
 						"width": 350,
 						"height": 350,
 						"src": "performance.png"
+					}
+				]
+            },
+            {
+				"transition_in": "ease_in",
+				"transition_out": "ease_out",
+				"elements": [
+                    {
+						"type": "image",
+						"hasShape": true,
+						"color": "#000000",
+						"align": "top|center",
+						"top": 35,
+						"bottomText": {
+							"content": "Fast\ndevelopment",
+							"textAlign": "center",
+							"color": "#ffffff",
+							"size": 40,
+							"width": -2,
+							"height": -2
+						},
+						"left": 25,
+						"right": 25,
+						"bottom": 25,
+						"width": 350,
+						"height": 350,
+						"src": "fastdev.png"
+					},
+					{
+						"type": "image",
+						"hasShape": true,
+						"color": "#000000",
+						"align": "top|center",
+						"top": 35,
+						"bottomText": {
+							"content": "Rich community\nsupport",
+							"color": "#ffffff",
+							"textAlign": "center",
+							"size": 40,
+							"width": -2,
+							"height": -2
+						},
+						"left": 900,
+						"right": 25,
+						"bottom": 25,
+						"width": 350,
+						"height": 350,
+						"src": "ui.png"
+					},
+					{
+						"type": "image",
+						"hasShape": true,
+						"color": "#000000",
+						"align": "top|center",
+						"top": 35,
+						"bottomText": {
+							"content": "<b>Expressive &\nFlexible UI</b>",
+							"color": "#ffffff",
+							"textAlign": "center",
+							"size": 40,
+							"width": -2,
+							"height": -2
+						},
+						"left": 25,
+						"right": 900,
+						"bottom": 25,
+						"width": 350,
+						"height": 350,
+						"src": "performance.png"
+					},
+                    {
+						"background_color": "#ffffff",
+                        "top": 400,
+                        "align": "top|center",
+						"width": 1200,
+						"height": 1
+                    },
+                    {
+						"type": "text",
+						"color": "#ffffff",
+						"content": "● Delight your users with Flutter's built-in beautiful Material Design (flutter/material), Cupertino (flutter/cupertino)\n\n● Widget-centric (inspired from React): describe view should look like given their current configuration and state\n\n● Simple APIs for animation to build enhanced UI",
+						"size": 38,
+                        "align": "center",
+                        "top": 350,
+                        "left": 220,
+                        "right": 650
+					}
+				]
+            },
+            {
+				"transition_in": "ease_in",
+				"transition_out": "ease_out",
+				"elements": [
+                    {
+						"type": "image",
+						"hasShape": true,
+						"color": "#000000",
+						"align": "top|center",
+						"top": 35,
+						"bottomText": {
+							"content": "<b>Fast\ndevelopment</b>",
+							"textAlign": "center",
+							"color": "#ffffff",
+							"size": 40,
+							"width": -2,
+							"height": -2
+						},
+						"left": 25,
+						"right": 25,
+						"bottom": 25,
+						"width": 350,
+						"height": 350,
+						"src": "fastdev.png"
+					},
+					{
+						"type": "image",
+						"hasShape": true,
+						"color": "#000000",
+						"align": "top|center",
+						"top": 35,
+						"bottomText": {
+							"content": "Rich community\nsupport",
+							"color": "#ffffff",
+							"textAlign": "center",
+							"size": 40,
+							"width": -2,
+							"height": -2
+						},
+						"left": 900,
+						"right": 25,
+						"bottom": 25,
+						"width": 350,
+						"height": 350,
+						"src": "ui.png"
+					},
+					{
+						"type": "image",
+						"hasShape": true,
+						"color": "#000000",
+						"align": "top|center",
+						"top": 35,
+						"bottomText": {
+							"content": "Expressive &\nFlexible UI",
+							"color": "#ffffff",
+							"textAlign": "center",
+							"size": 40,
+							"width": -2,
+							"height": -2
+						},
+						"left": 25,
+						"right": 900,
+						"bottom": 25,
+						"width": 350,
+						"height": 350,
+						"src": "performance.png"
+					},
+                    {
+						"background_color": "#ffffff",
+                        "top": 400,
+                        "align": "top|center",
+						"width": 1200,
+						"height": 1
+                    },
+                    {
+						"type": "text",
+						"color": "#ffffff",
+						"content": "● Hot reload/restarts helps you quickly develop features and fix bugs\n\n● It gives tools to inspect UIs like: Inspector, Performance, Layout explorer\n\n● No unexpected results on both platform (Skia for rendering)",
+						"size": 38,
+                        "align": "center",
+                        "top": 350,
+                        "left": 220,
+                        "right": 650
+					}
+				]
+            },
+            {
+				"transition_in": "ease_in",
+				"transition_out": "ease_out",
+				"elements": [
+                    {
+						"type": "image",
+						"hasShape": true,
+						"color": "#000000",
+						"align": "top|center",
+						"top": 35,
+						"bottomText": {
+							"content": "Fast\ndevelopment",
+							"textAlign": "center",
+							"color": "#ffffff",
+							"size": 40,
+							"width": -2,
+							"height": -2
+						},
+						"left": 25,
+						"right": 25,
+						"bottom": 25,
+						"width": 350,
+						"height": 350,
+						"src": "fastdev.png"
+					},
+					{
+						"type": "image",
+						"hasShape": true,
+						"color": "#000000",
+						"align": "top|center",
+						"top": 35,
+						"bottomText": {
+							"content": "<b>Rich community\nsupport</b>",
+							"color": "#ffffff",
+							"textAlign": "center",
+							"size": 40,
+							"width": -2,
+							"height": -2
+						},
+						"left": 900,
+						"right": 25,
+						"bottom": 25,
+						"width": 350,
+						"height": 350,
+						"src": "ui.png"
+					},
+					{
+						"type": "image",
+						"hasShape": true,
+						"color": "#000000",
+						"align": "top|center",
+						"top": 35,
+						"bottomText": {
+							"content": "Expressive &\nFlexible UI",
+							"color": "#ffffff",
+							"textAlign": "center",
+							"size": 40,
+							"width": -2,
+							"height": -2
+						},
+						"left": 25,
+						"right": 900,
+						"bottom": 25,
+						"width": 350,
+						"height": 350,
+						"src": "performance.png"
+					},
+                    {
+						"background_color": "#ffffff",
+                        "top": 400,
+                        "align": "top|center",
+						"width": 1200,
+						"height": 1
+                    },
+                    {
+						"type": "text",
+						"color": "#ffffff",
+						"content": "● It has a lot of <b>youtube tutorial compilations</b> and <b>codelabs</b> made by Google developers\n\n● You can find tons of packages on pub.dev\n\n● You can find <b>several communities</b> that talks about Flutter. E.g. r/FlutterDev, Slack community\n\n",
+						"size": 38,
+                        "align": "center",
+                        "top": 350,
+                        "left": 220,
+                        "right": 650
 					}
 				]
 			},

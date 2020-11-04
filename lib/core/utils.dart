@@ -326,10 +326,27 @@ Widget _buildCommonProperty(ElementModel model, Widget widget, ResolutionScreen 
     bottom: resolution.getDimen(bottom, 'h')
   );
 
+  if(!hasShape(model)) {
+    if(model.elementType == null || model.elementType.isEmpty) {
+      return Container(
+        padding: edgeInset,
+        child: Container(
+          child: widget, 
+          color: color,
+        ),
+      );
+    } else {
+      return Container(
+        color: color,
+        padding: edgeInset,
+        child: widget,
+      );
+    }
+  }
+
   return !hasShape(model) ? Container(
-    color: color,
     padding: edgeInset,
-    child: widget,
+    child: Container(child: widget, color: color,),
   ) : Container(
     decoration: BoxDecoration(
       shape: BoxShape.circle,
