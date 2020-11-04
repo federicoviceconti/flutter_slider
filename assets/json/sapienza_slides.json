@@ -117,6 +117,19 @@
 				"elements": []
 			},
 			{
+				"background_color": "#212121",
+				"transition_in": "ease_in",
+				"transition_out": "ease_out",
+				"elements": [
+					{
+						"type": "image",
+						"src": "portfolio.png",
+						"width": 1890,
+						"height": 1080
+					}
+				]
+			},
+			{
 				"has_logo": false,
 				"background_color": "#212121",
 				"title": {
@@ -344,6 +357,15 @@
 						"top": 350,
 						"left": 220,
 						"right": 650
+					},
+					{
+						"type": "image",
+						"align": "center",
+						"left": 1000,
+						"top": 350,
+						"width": 400,
+						"height": 400,
+						"src": "example-flutter.gif"
 					}
 				]
 			},
@@ -351,6 +373,14 @@
 				"transition_in": "ease_in",
 				"transition_out": "ease_out",
 				"elements": [
+					{
+						"type": "image",
+						"align": "center",
+						"left": 1000,
+						"top": 350,
+						"width": 500,
+						"src": "example-counter.gif"
+					},
 					{
 						"type": "image",
 						"hasShape": true,
@@ -429,7 +459,7 @@
 						"align": "center",
 						"top": 350,
 						"left": 220,
-						"right": 650
+						"right": 720
 					}
 				]
 			},
@@ -437,6 +467,14 @@
 				"transition_in": "ease_in",
 				"transition_out": "ease_out",
 				"elements": [
+					{
+						"type": "image",
+						"align": "center",
+						"left": 1000,
+						"top": 350,
+						"width": 500,
+						"src": "pub_dev.png"
+					},
 					{
 						"type": "image",
 						"hasShape": true,
@@ -515,7 +553,7 @@
 						"align": "center",
 						"top": 350,
 						"left": 220,
-						"right": 650
+						"right": 750
 					}
 				]
 			},
@@ -626,30 +664,14 @@
 				]
 			},
 			{
-				"title": {
-					"type": "text",
-					"color": "#D5FD58",
-					"content": "<b>Stateless vs Stateful</b>",
-					"top": 80,
-					"left": 80,
-					"size": 80
-				},
 				"transition_in": "ease_in",
 				"transition_out": "ease_out",
 				"elements": [
 					{
-						"type": "text",
-						"color": "#ffffff",
-						"content": "● No mutable state\n\n● His properties doesn’t change over time \n\n● His parent maintains his state",
-						"size": 40,
-						"align": "left"
-					},
-					{
-						"type": "text",
-						"color": "#ffffff",
-						"content": "● Mutable state\n\n● His properties change over time \n\n● It stores his state inside itself into an internal class",
-						"size": 40,
-						"align": "right"
+						"type": "image",
+						"src": "statefull_less.png",
+						"width": 1600,
+						"left": 100
 					}
 				]
 			},
@@ -836,6 +858,13 @@
 						"left": 80
 					},
 					{
+						"type": "image",
+						"src": "bloc_example_2.png",
+						"left": 1040,
+						"right": 80,
+						"top": 740
+					},
+					{
 						"type": "app",
 						"name": "counter",
 						"top": 100,
@@ -843,13 +872,6 @@
 						"width": 800,
 						"height": 600,
 						"right": 80
-					},
-					{
-						"type": "image",
-						"src": "bloc_example_2.png",
-						"left": 1040,
-						"right": 80,
-						"top": 740
 					}
 				]
 			},
