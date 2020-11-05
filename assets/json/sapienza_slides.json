@@ -123,24 +123,93 @@
 				"transition_out": "ease_out",
 				"elements": [
 					{
-						"background_color": "#B5D2CC",
+						"background_color": "#BAD1CC",
 						"width": 1920,
-						"height": 100,
+						"height": 360,
 						"align": "top|center"
 					},
 					{
-						"background_color": "#152813",
+						"background_color": "#EE482E",
 						"width": 1920,
-						"height": 100,
-						"align": "bottom|center"
+						"height": 360,
+						"top": 360,
+						"align": "top|center"
 					},
 					{
-						"type": "image",
-						"src": "portfolio.png",
+						"background_color": "#192615",
 						"width": 1920,
-						"height": 1080
+						"height": 360,
+						"top": 720,
+						"align": "top|center"
+					},
+					{
+						"type": "text",
+						"color": "#000000",
+						"content": "Native apps",
+						"align": "left",
+						"left": 30,
+						"size": 80
+					},
+					{
+						"type": "text",
+						"color": "#000000",
+						"content": "We work both with Native technologies for iOS and Android: <b>Swift/Objective-C, Kotlin/Java</b>, and with cross-platform framework: <b>Google Flutter</b>",
+						"left": 800,
+						"right": 30,
+						"top": 20,
+						"size": 40
+					},
+					{
+						"type": "text",
+						"color": "#000000",
+						"content": "Front-End",
+						"align": "left",
+						"left": 30,
+						"right": 80,
+						"size": 80,
+						"top": 390
+					},
+					{
+						"type": "text",
+						"color": "#000000",
+						"content": "Front-end are realized with: <b>Angular, ReactJS, Vue.js</b>",
+						"left": 800,
+						"right": 80,
+						"size": 40,
+						"top": 400
+					},
+					{
+						"type": "text",
+						"color": "#FFFFFF",
+						"content": "Gaming",
+						"align": "left",
+						"left": 30,
+						"size": 80,
+						"top": 750
+					},
+					{
+						"type": "text",
+						"color": "#FFFFFF",
+						"content": "We build gaming experience based on <b>Unity 2D and 3D</b>, a cross-platform game engine used to develop games for PC, Consoles and Mobile Devices",
+						"left": 800,
+						"right": 80,
+						"size": 40,
+						"top": 770
 					}
 				]
+			},
+			{
+				"title": {
+					"type": "text",
+					"color": "#D5FD58",
+					"content": "<b>What are we looking for?</b>",
+					"top": 80,
+					"left": 80,
+					"size": 80
+				},
+				"transition_in": "ease_in",
+				"transition_out": "ease_out",
+				"elements": []
 			},
 			{
 				"has_logo": false,
@@ -621,7 +690,7 @@
 					{
 						"type": "text",
 						"color": "#ffffff",
-						"content": "● Developed by Google in 2011 to replace JavaScript\n\n● Suitable to develop interactive or data-intensive applications\n\n● Declarative and Object Oriented language\n\n● Fast development",
+						"content": "● Developed by Google in 2011 to replace JavaScript\n\n● Client-optimized language for fast apps on any platform\n\n● Fast development => Hot Reload\n\n● Declarative and Object Oriented language",
 						"size": 40,
 						"left": 80,
 						"top": 400
