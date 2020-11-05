@@ -246,8 +246,6 @@ List<InlineSpan> _getSpanByText(String labelText, {String accentColor, String pr
     }
 
     indexCurrent = indexEnd + endTag.length;
-
-    print('$labelText $indexCurrent');
   }
 
   return texts;
