@@ -48,7 +48,7 @@ flutter:
     - assets/images/
     - assets/images/provider/
     - assets/json/
-    - assets/animations/flutter.flr
+    - assets/animations/
 
   fonts:
     - family: FuturaPT

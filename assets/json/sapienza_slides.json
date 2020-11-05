@@ -21,6 +21,56 @@
 		],
 		"slides": [
 			{
+				"transition_in": "ease_in",
+				"transition_out": "ease_out",
+				"elements": [
+					{
+						"type": "image",
+						"src": "flutter_question.jpeg",
+						"left": 300,
+						"bottom": 450,
+						"top": 200,
+						"right": 300
+					},
+					{
+						"type": "text",
+						"color": "#45D1FD",
+						"content": "Any questions?",
+						"align": "bottom|center",
+						"size": 80,
+						"bottom": 300
+					},
+					{
+						"type": "text",
+						"color": "#45D1FD",
+						"content": "To submit your apply or to ask any information:",
+						"align": "bottom|center",
+						"size": 30,
+						"bottom": 200
+					},
+					{
+						"type": "text",
+						"color": "#45D1FD",
+						"accentColor": "#45D1FD",
+						"content": "<b>dario.pinzi@nttdata.com</b>",
+						"align": "bottom|center",
+						"size": 30,
+						"bottom": 150,
+						"link": "mailto:dario.pinzi@nttdata.com"
+					},
+					{
+						"type": "text",
+						"color": "#45D1FD",
+						"accentColor": "#45D1FD",
+						"content": "<b>alessandra.chiuri@nttdata.com</b>",
+						"align": "bottom|center",
+						"size": 30,
+						"bottom": 100,
+						"link": "mailto:alessandra.chiuri@nttdata.com"
+					}
+				]
+			},
+			{
 				"has_logo": false,
 				"background_color": "#212121",
 				"title": {
@@ -221,6 +271,38 @@
 						"height": 150,
 						"bottom": 107,
 						"left": 460
+					}
+				]
+			},
+			{
+				"title": {
+					"type": "text",
+					"color": "#D5FD58",
+					"content": "<b>We are looking for...</b>",
+					"top": 80,
+					"left": 80,
+					"size": 80
+				},
+				"transition_in": "ease_in",
+				"transition_out": "ease_out",
+				"elements": [
+					{
+						"type": "text",
+						"color": "#ffffff",
+						"content": "We are looking for people who have passion for mobile, front-end and gaming Technologies. People curious and hungry to know and experiment with new technologies and solutions.\n\nSenior and junior profiles are part of our team.\n\nWe work closely with Tangity: the NTT Data design studio with multidisciplinary UX, Design and Strategy team.",
+						"size": 40,
+						"align": "center",
+						"left": 80,
+						"right": 500
+					},
+					{
+						"type": "animation",
+						"name": "flutter.flr",
+						"align": "bottom|right",
+						"height": 950,
+						"left": 100,
+						"bottom": 100,
+						"width": 700
 					}
 				]
 			},
@@ -1440,28 +1522,9 @@
 					}
 				]
 			},
-			{
-				"title": {
-					"type": "text",
-					"color": "#45D1FD",
-					"content": "Any questions?",
-					"align": "bottom|center",
-					"size": 80,
-					"bottom": 200
-				},
-				"transition_in": "ease_in",
-				"transition_out": "ease_out",
-				"elements": [
-					{
-						"type": "image",
-						"src": "flutter_question.jpeg",
-						"left": 300,
-						"bottom": 400,
-						"top": 200,
-						"right": 300
-					}
-				]
-			},
+			
+
+
 			{
 				"transition_in": "ease_in",
 				"transition_out": "ease_out",
