@@ -21,56 +21,6 @@
 		],
 		"slides": [
 			{
-				"transition_in": "ease_in",
-				"transition_out": "ease_out",
-				"elements": [
-					{
-						"type": "image",
-						"src": "flutter_question.jpeg",
-						"left": 300,
-						"bottom": 450,
-						"top": 200,
-						"right": 300
-					},
-					{
-						"type": "text",
-						"color": "#45D1FD",
-						"content": "Any questions?",
-						"align": "bottom|center",
-						"size": 80,
-						"bottom": 300
-					},
-					{
-						"type": "text",
-						"color": "#45D1FD",
-						"content": "To submit your apply or to ask any information:",
-						"align": "bottom|center",
-						"size": 30,
-						"bottom": 200
-					},
-					{
-						"type": "text",
-						"color": "#45D1FD",
-						"accentColor": "#45D1FD",
-						"content": "<b>dario.pinzi@nttdata.com</b>",
-						"align": "bottom|center",
-						"size": 30,
-						"bottom": 150,
-						"link": "mailto:dario.pinzi@nttdata.com"
-					},
-					{
-						"type": "text",
-						"color": "#45D1FD",
-						"accentColor": "#45D1FD",
-						"content": "<b>alessandra.chiuri@nttdata.com</b>",
-						"align": "bottom|center",
-						"size": 30,
-						"bottom": 100,
-						"link": "mailto:alessandra.chiuri@nttdata.com"
-					}
-				]
-			},
-			{
 				"has_logo": false,
 				"background_color": "#212121",
 				"title": {
@@ -1522,9 +1472,56 @@
 					}
 				]
 			},
-			
-
-
+			{
+				"transition_in": "ease_in",
+				"transition_out": "ease_out",
+				"elements": [
+					{
+						"type": "image",
+						"src": "flutter_question.jpeg",
+						"left": 300,
+						"bottom": 450,
+						"top": 200,
+						"right": 300
+					},
+					{
+						"type": "text",
+						"color": "#45D1FD",
+						"content": "Any questions?",
+						"align": "bottom|center",
+						"size": 80,
+						"bottom": 300
+					},
+					{
+						"type": "text",
+						"color": "#45D1FD",
+						"content": "To submit your apply or to ask any information:",
+						"align": "bottom|center",
+						"size": 30,
+						"bottom": 200
+					},
+					{
+						"type": "text",
+						"color": "#45D1FD",
+						"accentColor": "#45D1FD",
+						"content": "<b>dario.pinzi@nttdata.com</b>",
+						"align": "bottom|center",
+						"size": 30,
+						"bottom": 150,
+						"link": "mailto:dario.pinzi@nttdata.com"
+					},
+					{
+						"type": "text",
+						"color": "#45D1FD",
+						"accentColor": "#45D1FD",
+						"content": "<b>alessandra.chiuri@nttdata.com</b>",
+						"align": "bottom|center",
+						"size": 30,
+						"bottom": 100,
+						"link": "mailto:alessandra.chiuri@nttdata.com"
+					}
+				]
+			},
 			{
 				"transition_in": "ease_in",
 				"transition_out": "ease_out",
