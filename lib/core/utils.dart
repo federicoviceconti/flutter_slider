@@ -46,7 +46,8 @@ createElement(Map<String, dynamic> json) {
 AnimationElement createAnimationElementFromJson(Map<String, dynamic> json) {
   if(json != null) {
     return AnimationElement(
-      name: json['name']
+      name: json['name'],
+      keyFrame: json['keyFrame'],
     );
   }
 
@@ -151,7 +152,7 @@ _shouldBuildBottomText(ImageElement image, ResolutionScreen resolutionScreen, Si
 }
 
 Widget createAnimation(AnimationElement anim) {
-  return FlareActor("assets/animations/${anim.name}", fit:BoxFit.contain, animation:"idle");
+  return FlareActor("assets/animations/${anim.name}", fit:BoxFit.contain, animation: anim?.keyFrame ?? 'idle');
 }
 
 Widget createApp(AppElement app) {

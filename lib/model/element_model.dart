@@ -80,6 +80,7 @@ class AppElement extends ElementModel {
 
 class AnimationElement extends ElementModel {
   final String name;
+  final String keyFrame;
 
-  AnimationElement({this.name}) : super(ElementConstant.ANIMATION);
+  AnimationElement({this.name, this.keyFrame}) : super(ElementConstant.ANIMATION);
 }

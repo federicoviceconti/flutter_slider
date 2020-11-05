@@ -199,19 +199,6 @@
 				]
 			},
 			{
-				"title": {
-					"type": "text",
-					"color": "#D5FD58",
-					"content": "<b>What are we looking for?</b>",
-					"top": 80,
-					"left": 80,
-					"size": 80
-				},
-				"transition_in": "ease_in",
-				"transition_out": "ease_out",
-				"elements": []
-			},
-			{
 				"has_logo": false,
 				"background_color": "#212121",
 				"title": {
@@ -256,7 +243,16 @@
 						"size": 40,
 						"align": "center",
 						"left": 80,
-						"right": 80
+						"right": 500
+					},
+					{
+						"type": "animation",
+						"name": "flutter.flr",
+						"align": "bottom|right",
+						"height": 950,
+						"left": 100,
+						"bottom": 100,
+						"width": 700
 					}
 				]
 			},
@@ -1463,6 +1459,30 @@
 						"bottom": 400,
 						"top": 200,
 						"right": 300
+					}
+				]
+			},
+			{
+				"transition_in": "ease_in",
+				"transition_out": "ease_out",
+				"elements": [
+					{
+						"type": "text",
+						"color": "#ffffff",
+						"content": "You can find these slides at: <b>https://sapienza-slides.web.app/</b>",
+						"size": 38,
+						"align": "top|center",
+						"top": 200,
+						"link": "https://sapienza-slides.web.app/"
+					},
+					{
+						"type": "animation",
+						"name": "code_screen_coffee.flr",
+						"align": "bottom|center",
+						"height": 950,
+						"width": 700,
+						"keyFrame": "coding",
+						"link": "https://sapienza-slides.web.app/"
 					}
 				]
 			},
