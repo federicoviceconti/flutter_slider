@@ -155,7 +155,7 @@
 						"color": "#000000",
 						"content": "We work both with Native technologies for iOS and Android: <b>Swift/Objective-C, Kotlin/Java</b>, and with cross-platform framework: <b>Google Flutter</b>",
 						"left": 800,
-						"right": 30,
+						"right": 80,
 						"top": 20,
 						"size": 40
 					},
@@ -244,15 +244,6 @@
 						"align": "center",
 						"left": 80,
 						"right": 500
-					},
-					{
-						"type": "animation",
-						"name": "flutter.flr",
-						"align": "bottom|right",
-						"height": 950,
-						"left": 100,
-						"bottom": 100,
-						"width": 700
 					}
 				]
 			},
@@ -1411,7 +1402,37 @@
 					{
 						"type": "text",
 						"color": "#ffffff",
-						"content": "● It allows Kena dealers to create new contracts and recharge a sim easily\n\n● It replaced the web application previously used\n\n● The process is 100% paperless and fast thanks to the integration of BlinkID SDK",
+						"content": "● It allows Kena dealers to create new contracts and recharge a sim easily\n\n● It replaced the web application previously used\n\n● The process is 100% paperless and fast",
+						"size": 38,
+						"align": "center",
+						"top": 350,
+						"left": 220,
+						"right": 220
+					}
+				]
+			},
+			{
+				"transition_in": "ease_in",
+				"transition_out": "ease_out",
+				"elements": [
+					{
+						"type": "image",
+						"src": "half_keapp_screen.png",
+						"width": 1500,
+						"height": 350,
+						"align": "top|center"
+					},
+					{
+						"background_color": "#303030",
+						"top": 400,
+						"align": "top|center",
+						"width": 1200,
+						"height": 1
+					},
+					{
+						"type": "text",
+						"color": "#ffffff",
+						"content": "● Bloc architecture\n\n● OCR integrated with BlinkID SDK\n\n● Contract signature flow implemented via native WebView",
 						"size": 38,
 						"align": "center",
 						"top": 350,
@@ -1463,7 +1484,37 @@
 					{
 						"type": "text",
 						"color": "#ffffff",
-						"content": "● It allow to monitor the facility’s capacity to respect the latest health and safety standards\n\n● It allow employees to choose and book a place or a room inside the office for themselves or for their entire team\n\n● It allow smart check in at the turnstiles\n\n● It is whitelabel => can be customized for customer",
+						"content": "● It allows to monitor the facility’s capacity to respect the latest health and safety standards\n\n● It allows employees to choose and book a place or a room inside the office for themselves or for their entire team\n\n● It is whitelabel => can be customized for customer",
+						"size": 38,
+						"align": "center",
+						"top": 350,
+						"left": 220,
+						"right": 220
+					}
+				]
+			},
+			{
+				"transition_in": "ease_in",
+				"transition_out": "ease_out",
+				"elements": [
+					{
+						"type": "image",
+						"src": "half_sobos_screen.png",
+						"width": 1500,
+						"height": 350,
+						"align": "top|center"
+					},
+					{
+						"background_color": "#303030",
+						"top": 400,
+						"align": "top|center",
+						"width": 1200,
+						"height": 1
+					},
+					{
+						"type": "text",
+						"color": "#ffffff",
+						"content": "● MVVM architecture\n\n● Interactive maps are svg shown through native WebView\n\n● Smart notification for check in and check out",
 						"size": 38,
 						"align": "center",
 						"top": 350,
@@ -1514,11 +1565,11 @@
 						"type": "text",
 						"color": "#45D1FD",
 						"accentColor": "#45D1FD",
-						"content": "<b>alessandra.chiuri@nttdata.com</b>",
+						"content": "<b>https://it.nttdata.com/Career</b>",
 						"align": "bottom|center",
 						"size": 30,
 						"bottom": 100,
-						"link": "mailto:alessandra.chiuri@nttdata.com"
+						"link": "https://it.nttdata.com/Career"
 					}
 				]
 			},
