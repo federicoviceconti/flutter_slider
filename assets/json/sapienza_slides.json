@@ -1206,7 +1206,7 @@
 					{
 						"type": "text",
 						"color": "#ffffff",
-						"content": "<b>PROs</b>\n\n● Easy (and fun)to learn\n\n● It’s perfect for MVP (Minimum Viable Product)\n\n● Reduce compiling time\n\n● It’s really cross. You cannot find difference between native and Flutter app\n\n<b>CONSs</b>\n\n● AR plugins are under development (not ready for production)",
+						"content": "<b>PROs</b>\n\n● Easy (and fun) to learn\n\n● It’s perfect for MVP (Minimum Viable Product)\n\n● Reduce compiling time\n\n● It’s really cross. You cannot find difference between native and Flutter app\n\n<b>CONSs</b>\n\n● AR plugins are under development (not ready for production)",
 						"size": 40,
 						"align": "center|left",
 						"left": 80,
