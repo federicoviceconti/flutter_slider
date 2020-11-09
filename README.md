@@ -15,7 +15,7 @@ A tech corner is a 30 minutes speech, where we talk about everything, such as tr
 In this event we try to explain the state management topic
 
 ## Why Flutter works! - Sapienza
-Explaing why Flutter rocks using real examples made in Flutter
+Explaing why Flutter rocks using real examples made in Flutter.
 Link: https://sapienza-slides.web.app/
 
 # How code is structured?
