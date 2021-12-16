@@ -1,6 +1,6 @@
 # flutter_slider
-Creates slides from a json file. This tool will show a presentation that adapts to every resolution.
-You can some presentation examples into "assets/json" folder.
+Creates slides from a json file. This tool will show a presentation that adapts to every screen resolution.
+You can find some presentation examples into "assets/json" folder.
 
 ## Why?
 To make speeches special. This project was created to show the powerful of Flutter framework.
